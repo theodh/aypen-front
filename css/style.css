@@ -285,11 +285,6 @@ header .logo {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-header .mainmenu-container {
-  z-index: 10;
-  position: absolute;
-  right: 0;
-}
 header .mainmenu-container ul {
     text-align: right;
     display: inline-block;

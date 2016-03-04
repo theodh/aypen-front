@@ -390,19 +390,19 @@
 		visibility: visible;
 		border-top: none;
 	}
-	header .mainmenu-container ul.mainmenu li a {
-		text-align: left;
-		display: block;
-		color: #FFF;
-		line-height: 35px;
-		font-size: 14px;
-		font-weight: 600;
-		padding: 0 20px;
-		text-transform: capitalize;
-		transition: all 0.3s ease 0s;
-		border-bottom: 1px solid #E4E4E4;
-		background: #12AEF8;
-	}
+  /*.mainmenu-container ul.mainmenu li a {
+    background: transparent none repeat scroll 0 0;
+    border-bottom: 1px solid #2A2A2A;
+    color: #767474;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 0 20px;
+    text-align: left;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+  }
 	header .mainmenu-container ul.mainmenu li a:after {
 		display: none;
 	}
@@ -450,7 +450,7 @@
 	}
 	.mainmenu-container ul li.dropdown .fa:hover {
 		background: #FE5454;
-	}
+	}*/
 	header .logo {
 		text-align: center;
 	}
@@ -508,7 +508,7 @@
 	#request-a-qoute-container {
 		margin-top: -55px;
 	}
-	.home-v2 .mainmenu-container ul.mainmenu li a:hover, 
+	.home-v2 .mainmenu-container ul.mainmenu li a:hover,
 	.home-v2 .mainmenu-container ul.mainmenu li.current a {
 	    background: #012C3C;
 	}
@@ -637,7 +637,7 @@
 	}
 	#our-projects.with-filter .gallery-filter li span {
 		margin-bottom: 15px;
-	}	
+	}
 	#featured .container {
 		overflow: hidden;
 	}
@@ -909,113 +909,11 @@
 	#why-choose-us .col-lg-3 {
 		margin-bottom: 35px;
 	}
-	
-	.mainmenu-container {
-		padding: 30px 0;
-	}
-	button.mainmenu-toggler {
-		display: block;
-	}
-	header .mainmenu-container ul li {
-		line-height: 40px;
-		display: block;
-	}
-	header .mainmenu-container ul.top-icons-wrap {
-		margin-bottom: 30px;
-	}
-	header .mainmenu-container ul li.top-icons {
-		display: inline-block;
-	}
-	header .mainmenu-container ul.mainmenu {
-		float: none !important;
-		display: none;
-		text-align: center;
-		clear: both;
-		width: 75%;
-		margin: auto;
-		background: transparent;
-		border-radius: 5px;
-	}
-	header .mainmenu-container ul.mainmenu ul {
-		position: static;
-		opacity: 1;
-		visibility: visible;
-		border: none;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-	}
-	header .mainmenu-container ul.mainmenu li a {
-		background: transparent none repeat scroll 0 0;
-		border-bottom: 1px solid #2A2A2A;
-		color: #767474;
-		display: block;
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 35px;
-		padding: 0 20px;
-		text-align: left;
-		text-transform: capitalize;
-		transition: all 0.3s ease 0s;
-	}
-	header nav.mainmenu-container ul > li > ul > li > a::after {
-		display: none;
-	}
-	header .mainmenu-container ul.mainmenu li a:hover,
-	header .mainmenu-container ul.mainmenu li.current > a {
-		color: #fff !important;
-		background: #DC9514;
-		padding: 0 30px;
-	}
-	header .mainmenu-container ul.mainmenu li.current > a {
-		padding: 0 20px;
-	}
-	header .mainmenu-container ul.mainmenu li ul.submenu {
-		display: none;
-	}
-	header .mainmenu-container ul.mainmenu li:last-child a {
-		border-bottom: 1px solid #2A2A2A;
-	}
-	header .mainmenu-container ul.mainmenu li a:before {
-		content: '';
-		display: none;
-	}
-	header .mainmenu-container ul.mainmenu ul {
-		width: 100%;
-	}
-	.mainmenu-container ul li.dropdown:after {
-		display: none !important;
-	}
-	.mainmenu-container ul li.dropdown .fa {
-		position: absolute;
-		right: 7px;
-		top: 5px;
-		width: 35px;
-		height: 25px;
-		display: block;
-		color: #FFF;
-		line-height: 22px;
-		font-size: 18px;
-		text-align: center;
-		z-index: 5;
-		cursor: pointer;
-		border: 1px solid #fff;
-		border-radius: 5px;
-	}
-	.mainmenu-container ul li.dropdown .fa:hover {
-		background: #DC9514;
-		color: #fff;
-	}
 	header .logo {
 		text-align: center;
 	}
 	header.header-fixed {
 		position: static;
-	}
-	header.header-fixed .mainmenu-container ul li {
-		line-height: 45px;
-	}
-	header.header-fixed .mainmenu-container {
-		padding-top: 15px;
 	}
 	.service-tab-content .col-lg-4 img {
 		max-width: 100%;
@@ -1150,7 +1048,7 @@
 	#request-a-qoute-container .tab-title ul li span {
 		padding: 0 15px;
 	}
-	.home-v2 .mainmenu-container ul.mainmenu li a:hover, 
+	.home-v2 .mainmenu-container ul.mainmenu li a:hover,
 	.home-v2 .mainmenu-container ul.mainmenu li.current a {
 	    background: #012C3C;
 	}
@@ -1219,7 +1117,7 @@
 		border: none;
 		border-top: 1px solid #d3d3d3;
 	}
-	
+
 	header.header-v4 .mainmenu-container ul.mainmenu {
 		border-radius: 0;
 		padding: 0;
@@ -1512,7 +1410,7 @@
 		position: static;
 		display: none;
 		opacity: 1;
-		visibility: visible;		
+		visibility: visible;
 	}
 	header.construct.header-curvy .mainmenu-container ul > li:hover > ul {
 		position: static;
@@ -1719,7 +1617,7 @@
 	}
 	#blog-construct .single-blog-post,
 	#our-team-construct .single-construct-member,
-	#testimonials-construct-home .single-testimonial-construct {	
+	#testimonials-construct-home .single-testimonial-construct {
 	  width: 85%;
 	  float: none;
 	  margin-left: auto;
@@ -1758,29 +1656,34 @@
 
 @media only screen and (max-width: 991px) {
 
+  /* Fix responsive menu */
+  header .mainmenu-container.pull-right {
+    float: none !important;
+    padding-bottom: 30px;
+  }
 	/* Force table to not be like tables anymore */
-	.cart-page table, .cart-page thead, .cart-page tbody, .cart-page th, .cart-page td, .cart-page tr { 
-		display: block; 
+	.cart-page table, .cart-page thead, .cart-page tbody, .cart-page th, .cart-page td, .cart-page tr {
+		display: block;
 	}
-	
+
 	/* Hide table headers (but not display: none;, for accessibility) */
-	.cart-page thead tr { 
+	.cart-page thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
-	
+
 	.cart-page tr { border: 1px solid #ccc; }
-	
-	.cart-page td { 
+
+	.cart-page td {
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid #eee; 
+		border-bottom: 1px solid #eee;
 		position: relative;
-		padding-left: 50%; 
+		padding-left: 50%;
 	}
-	
-	.cart-page td:before { 
+
+	.cart-page td:before {
 		/* Now like a table header */
 		/* Top/left values mimic padding */
 	    position: absolute;
@@ -1814,4 +1717,116 @@
 	td:nth-of-type(4):before { content: "Quantity"; }
 	td:nth-of-type(5):before { content: "Total"; }
 	td:nth-of-type(6):before { content: "Delete Item"; }
+}
+
+/* Fix for breaking header */
+@media only screen and (min-width: 992px) {
+  header .mainmenu {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mainmenu-container {
+		padding: 30px 0;
+	}
+	button.mainmenu-toggler {
+		display: block;
+	}
+	header .mainmenu-container ul li {
+		line-height: 40px;
+		display: block;
+	}
+	header .mainmenu-container ul.top-icons-wrap {
+		margin-bottom: 30px;
+	}
+	header .mainmenu-container ul li.top-icons {
+		display: inline-block;
+	}
+	header .mainmenu-container ul.mainmenu {
+		float: none !important;
+		display: none;
+		text-align: center;
+		clear: both;
+		width: 75%;
+		margin: auto;
+		background: transparent;
+		border-radius: 5px;
+	}
+	header .mainmenu-container ul.mainmenu ul {
+		position: static;
+		opacity: 1;
+		visibility: visible;
+		border: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	header .mainmenu-container ul.mainmenu li a {
+		background: transparent none repeat scroll 0 0;
+		border-bottom: 1px solid #2A2A2A;
+		color: #767474;
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 35px;
+		padding: 0 20px;
+		text-align: left;
+		text-transform: capitalize;
+		transition: all 0.3s ease 0s;
+	}
+	header nav.mainmenu-container ul > li > ul > li > a::after {
+		display: none;
+	}
+	header .mainmenu-container ul.mainmenu li a:hover,
+	header .mainmenu-container ul.mainmenu li.current > a {
+		color: #fff !important;
+		background: #DC9514;
+		padding: 0 30px;
+	}
+	header .mainmenu-container ul.mainmenu li.current > a {
+		padding: 0 20px;
+	}
+	header .mainmenu-container ul.mainmenu li ul.submenu {
+		display: none;
+	}
+	header .mainmenu-container ul.mainmenu li:last-child a {
+		border-bottom: 1px solid #2A2A2A;
+	}
+	header .mainmenu-container ul.mainmenu li a:before {
+		content: '';
+		display: none;
+	}
+	header .mainmenu-container ul.mainmenu ul {
+		width: 100%;
+	}
+	.mainmenu-container ul li.dropdown:after {
+		display: none !important;
+	}
+	.mainmenu-container ul li.dropdown .fa {
+		position: absolute;
+		right: 7px;
+		top: 5px;
+		width: 35px;
+		height: 25px;
+		display: block;
+		color: #FFF;
+		line-height: 22px;
+		font-size: 18px;
+		text-align: center;
+		z-index: 5;
+		cursor: pointer;
+		border: 1px solid #fff;
+		border-radius: 5px;
+	}
+	.mainmenu-container ul li.dropdown .fa:hover {
+		background: #DC9514;
+		color: #fff;
+	}
+  header.header-fixed .mainmenu-container ul li {
+    line-height: 45px;
+  }
+  header.header-fixed .mainmenu-container {
+    padding-top: 15px;
+  }
 }
