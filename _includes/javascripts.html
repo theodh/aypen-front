@@ -21,3 +21,9 @@
 <script src="js/jquery.easing.min.js"></script> <!-- jquery easing JS -->
 <script src="js/jquery.mixitup.min.js"></script> <!-- MixIt UP JS -->
 <script src="js/custom.js"></script> <!-- Custom JS -->
+<script src="js/aypen.js"></script> <!-- MixIt UP JS -->
+{% if page.aypentool %}
+<script type="application/javascript">
+    alert("{{page.aypentool}}");
+</script>
+{% endif %}

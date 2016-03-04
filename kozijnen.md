@@ -4,6 +4,7 @@ title: Kozijnen
 description: Uitleg over kozijnen
 keywords: kozijnen
 author: Judy Heeres
+aypentool: kozijnen
 ---
 <article class="blog full">
     <div class="image">
