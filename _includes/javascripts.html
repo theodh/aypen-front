@@ -23,7 +23,15 @@
 <script src="js/custom.js"></script> <!-- Custom JS -->
 <script src="js/aypen.js"></script> <!-- MixIt UP JS -->
 {% if page.aypentool %}
-<script type="application/javascript">
-    alert("{{page.aypentool}}");
-</script>
+    <script type="application/javascript">
+
+        if($('#toolLoader').length > 0)
+        {
+            $.get( "{{site.aypentool}}/tool/views/bereken.php", function( data ) {
+                $( "#toolLoader" ).html( data );
+
+                loadTool();
+            });
+        }
+    </script>
 {% endif %}
