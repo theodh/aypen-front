@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Verbouw
 description: Uitleg over verbouw
 keywords: verbouw, renovatie, renoveren, woningaanpassing

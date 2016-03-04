@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Aanbouw
 description: Uitleg over aanbouw
 keywords: aanbouw

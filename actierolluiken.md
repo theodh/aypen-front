@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Actie rolluiken
 description: Actie rolluiken 2015
 keywords: Actie

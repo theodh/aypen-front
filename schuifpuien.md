@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Schuifpuien
 description: Uitleg over schuifpuien
 keywords: schuifpuien, vouwwand, tuindeur

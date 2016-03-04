@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Deuren
 Title3: header_1.jpg
 description: Uitleg over deuren

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Terrasschermen
 description: Uitleg over terrasschermen
 keywords: terrasschermen

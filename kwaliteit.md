@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Kwaliteit
 description: Uitleg over kwaliteit
 keywords: kwaliteit

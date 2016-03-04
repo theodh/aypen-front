@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Kozijnen
 description: Uitleg over kozijnen
 keywords: kozijnen

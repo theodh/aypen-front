@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Veranda's & Serres
 description: Uitleg over veranda's & serres
 keywords: veranda, serre, tuinkamer

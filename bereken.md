@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Bereken prijs
 description: bereken tool
 keywords: bereken tool

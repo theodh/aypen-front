@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Contact
 description: contact opnemen met Aypen
 keywords: contact opnemen

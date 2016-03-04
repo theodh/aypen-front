@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Dakkapellen
 description: Uitleg over dakkapellen
 keywords: dakkapellen

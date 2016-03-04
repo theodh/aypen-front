@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Markiezen
 description: Uitleg over markiezen
 keywords: Markiezen, rolluiken

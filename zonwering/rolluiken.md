@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Rolluiken
 description: Uitleg over rolluiken
 keywords: Rolluiken

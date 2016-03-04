@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Duurzaam
 description: Uitleg over duurzaamheid
 keywords: duurzaam, duurzaamheid

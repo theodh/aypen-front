@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Serres
 description: Uitleg over serres
 keywords: serre, tuinkamer

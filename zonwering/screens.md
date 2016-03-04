@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Screens
 description: Uitleg over screens
 keywords: Zonwering, Screens

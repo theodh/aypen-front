@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Schoonheid
 description: Uitleg over schoonheid
 keywords: schoonheid
