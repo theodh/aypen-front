@@ -285,11 +285,6 @@ header .logo {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-header .mainmenu-container {
-  z-index: 10;
-  position: absolute;
-  right: 0;
-}
 header .mainmenu-container ul {
     text-align: right;
     display: inline-block;
@@ -6502,9 +6497,7 @@ header.construct.header-curvy .logo:before {
     z-index: 9999;
     transform: skewX(-45deg);
 }
-header.construct.header-curvy .mainmenu-container ul {
-    transition: all .5s ease !important;
-}
+
 header.construct.header-curvy .mainmenu-container > ul {
     font-size: 0;
 }
