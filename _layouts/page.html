@@ -1,14 +1,88 @@
 ---
 layout: default
 ---
-<article class="post">
+<!-- #blog-post -->
+<section id="blog-post" class="single-post">
+    <div class="container">
+        <div class="row">
+            <!-- article -->
+            <article>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 blog-content pull-left">
+                {% if page.mainImageUrl %}
+                <div class="img-holder">
+                    <img src="{{ page.mainImageUrl }}" alt="{{ page.title }}" height="{{ page.mainImageHeight }}"
+                         width="{{ page.mainImageWidth }}">
+                    {% if page.mainImageDateMonth %}
+                    <div class="date-holder">
+                        <b>{{page.mainImageDateDay}}</b>
+                        {{page.mainImageDateMonth}}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+                    <h2>{{ page.title }}</h2>
+                    <p>
+                        {{ content }}
+                    </p>
+                    <br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-push-0 col-md-push-0 col-sm-push-3 col-xs-push-0 sidebar blog-left pull-right">
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+                    <div class="sidebar-widget">
+                        <h4>Openingstijden</h4>
+                        <ul class="contact-info">
+                            <li>Maandag - Vrijdag:</br>
+                                10:00 - 12:00u</br>
+                                13:30 - 15:30u
+                            </li>
+                            <br/>
 
-</article>
+                            <li>Zaterdag:</br>
+                                10:00 - 15:30u
+                            </li>
+                            <br/>
+                            <li>En na telefonische afspraak!</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <br />
+                        <br/>
+                        <p>
+                            <img src="/img/gealanlogo.gif">
+                        </p>
+
+                        <br>
+                        <p>
+                            <img src="/img/verano.png">
+                        </p>
+                        <br>
+                        <p>
+                            <img src="/img/unilux.gif">
+                        </p>
+                        <br>
+                        <p>
+                            <img src="/img/pilkington.jpg">
+                        </p>
+                        <br>
+                        <p>
+                            <img src="/img/finstral.png">
+                        </p>
+                    </div>
+                </div>
+
+            </article> <!-- /article -->
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
