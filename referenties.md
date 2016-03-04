@@ -1,0 +1,62 @@
+---
+title: Referenties
+description: Referenties van verschillende aangenomen projecten
+keywords: referenties
+author: Theo den Hollander
+Template: fullpage
+---
+<div class="container aypen-image-gallery">
+     <ul class="row">
+      <li class="col-xs-12 col-md-4"><img alt="Badkamer" src="/img/badkamer.jpg" class="img-thumbnail" width="300px" /><br />Nieuwe badkamer</li>
+           
+      <li class="col-xs-12 col-md-4"><img alt="Kozijnen met luiken" src="/img/referenties/kozijnen_met_luiken.jpg" class="img-thumbnail" width="300px" /><br />Kozijnen luiken</li>  
+       <li class="col-xs-12 col-md-4"><img alt="Rolluiken" src="/img/referenties/rolluiken.jpg" class="img-thumbnail" width="300px" /><br />Rolluiken</li>
+ </ul>
+     <ul class="row">
+           <li class="col-xs-12 col-md-4"><img alt="Serre" src="/img/referenties/serre.jpg" class="img-thumbnail" width="300px" /><br />Serre</li>
+          <li class="col-xs-12 col-md-4"><img alt="Serre" src="/img/referenties/serre2.jpg" class="img-thumbnail" width="300px" /><br />Serre</li>
+          <li class="col-xs-12 col-md-4"><img alt="Binnenkant woning verbouwing" src="/img/referenties/woning_binnenkant.jpg" class="img-thumbnail" width="300px" /><br />Binnenkant woning</li>
+     </ul>
+     <ul class="row">
+          <li class="col-xs-12 col-md-4"><img alt="Kozijnen deur" src="/img/referenties/kozijnen_deur.jpg" class="img-thumbnail" width="300px" /><br />Kozijnen deur</li>
+          <li class="col-xs-12 col-md-4"><img alt="Kunststof kozijnen" src="/img/referenties/kunststof_kozijnen2.jpg" class="img-thumbnail" width="300px" /><br />Kunststof kozijnen</li>
+          <li class="col-xs-12 col-md-4"><img alt="Kunststof luiken" src="/img/referenties/luiken.jpg" class="img-thumbnail" width="300px" /><br />Kunststof luiken</li>
+     </ul>
+     <ul class="row">
+          <li class="col-xs-12 col-md-4"><img alt="Dubbele tuindeur" src="/img/referenties/dubbele_tuindeur.jpg" class="img-thumbnail" width="300px" /><br />Dubbele tuindeur</li>
+          <li class="col-xs-12 col-md-4"><img alt="Erker" src="/img/referenties/erker.jpg" class="img-thumbnail" width="300px" /><br />Erker</li>
+          <li class="col-xs-12 col-md-4"><img alt="Glazen veranda" src="/img/referenties/glazen_veranda.jpg" class="img-thumbnail" width="300px" /><br />Glazen veranda</li>
+     </ul>
+     <ul class="row">
+          <li class="col-xs-12 col-md-4"><img alt="Dakkapel" src="/img/referenties/dakkapel.jpg" class="img-thumbnail" width="300px" /><br />Dakkapel</li>
+          <li class="col-xs-12 col-md-4"><img alt="Dakkapel" src="/img/referenties/dakkapel2.jpg" class="img-thumbnail" width="300px" /><br />Dakkapel</li>
+          <li class="col-xs-12 col-md-4"><img alt="Dakkapel" src="/img/referenties/dakkapel3.jpg" class="img-thumbnail" width="300px" /><br />Dakkapel</li>
+     </ul>
+     <ul class="row">
+           <li class="col-xs-12 col-md-4"><img alt="Kunststof kozijnen" src="/img/referenties/kunststof_kozijnen.jpg" class="img-thumbnail" width="300px" /><br />Kunststof kozijnen</li>
+          <li class="col-xs-12 col-md-4"><img alt="Openstaande deuren" src="/img/referenties/openstaande_deuren.jpg" class="img-thumbnail" width="300px" /><br />Openstaande deuren</li>
+          <li class="col-xs-12 col-md-4"><img alt="Veranda" src="/img/referenties/veranda.jpg" class="img-thumbnail" width="300px" /><br />Veranda</li>
+     </ul>
+
+     
+  <ul class="row">
+   <li class="col-xs-12 col-md-4"><img alt="Aypen Kozijnen Cuijk" src="/img/referenties/aypen_kozijnen_cuijk.jpg" class="img-thumbnail" width="300px" /><br />Aypen Kozijnen Cuijk</li>
+       
+    <li class="col-xs-12 col-md-4"><img alt="Schuipui" src="/img/schuifpui.jpg" class="img-thumbnail" width="300px" /><br />Schuifpui</li>
+</ul>
+
+     
+</div>
+<style>
+     .aypen-image-gallery> ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+          list-style-type: none;
+      }
+      .aypen-image-gallery > ul li {     
+          list-style:none;
+          margin-bottom:55px;  
+          list-style-type: none;
+      }
+
+</style>
