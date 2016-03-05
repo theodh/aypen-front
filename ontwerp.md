@@ -4,12 +4,9 @@ menu-left: menu-aanbod.html
 mainImageUrl:
 mainImageHeight:
 mainImageWidth: 100%
-title: Badkamers
-description: Uitleg over Badkamers
-keywords: badkamer
+title: Advies & Ontwerp
+description: Uitleg advies en ontwerp
+keywords: advies, ontwerp
 author: Judy Heeres
-mainImageUrl:
-mainImageHeight:
-mainImageWidth: 100%
 ---
-
+Uitleg Advies en ontwerp

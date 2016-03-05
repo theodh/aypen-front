@@ -1,5 +1,9 @@
 ---
-layout: page
+layout: page-menu-left
+menu-left: menu-aanbod.html
+mainImageUrl:
+mainImageHeight:
+mainImageWidth: 100%
 title: Schuifpuien
 description: Uitleg over schuifpuien
 keywords: schuifpuien, vouwwand, tuindeur
