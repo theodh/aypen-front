@@ -6,21 +6,11 @@
         <li><a href="/">Home</a></li>
         <li><a href="/showroom">Showroom</a></li>
         <li class="dropdown">
-            <a href="#">Aanbod</a>
-            <ul class="submenu">
-                <li><a href="#">Kozijnen</a></li>
-                <li><a href="#">Veranda's en Serres</a></li>
-                <li><a href="#">Zonwering</a></li>
-                <li><a href="#">Dakkapellen</a></li>
-                <li><a href="#">Badkamers</a></li>
-                <li><a href="#">Installatiemateriaal</a></li>
-                <li><a href="#">Sanitair</a></li>
-                <li><a href="/verbouw">Verbouw</a></li>
-                <li><a href="/aanbouw">Aanbouw</a></li>
-            </ul>
+            <a href="/aanbod">Aanbod</a>
+
+            {% include menu-aanbod-list.html className='submenu' %}
         </li>
-        <li><a href="/referentie">Referentie</a></li>
-        <li><a href="#">Webshop</a></li>
+        <li><a href="/referenties">Referentie</a></li>
         <li><a href="/contact">Contact</a></li>
     </ul>
 </nav>

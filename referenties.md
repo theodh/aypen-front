@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-full-width
 title: Referenties
 description: Referenties van verschillende aangenomen projecten
 keywords: referenties

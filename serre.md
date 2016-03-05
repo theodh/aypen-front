@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: page-menu-left
+menu-left: menu-aanbod.html
 title: Serres
 description: Uitleg over serres
 keywords: serre, tuinkamer
