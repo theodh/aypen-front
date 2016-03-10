@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Verbouw
-description: Uitleg over verbouw
+title: Aanbouw, Verbouw & Renovatie
+description: Uitleg over aanbouw, verbouw en renovatie
 keywords: verbouw, renovatie, renoveren, woningaanpassing, aanbouw
 author: Judy Heeres
 ---
