@@ -6,7 +6,10 @@ mainImageHeight:
 mainImageWidth: 100%
 title: Advies & Ontwerp
 description: Uitleg advies en ontwerp
-keywords: advies, ontwerp
+keywords: advies, ontwerp, bouw, nieuwebouw, aanbouw, verbouw, renovatie, bouwadvies, bouwproject
 author: Judy Heeres
 ---
-Uitleg Advies en ontwerp
+Om ervoor te zorgen dat de bouw of verbouwing van uw woning goed verloopt, is het belangrijk om vóór u start met (ver)bouwen professioneel en gedegen advies in te winnen met betrekking tot uw bouwproject. Probleemvermijdend ontwerpen is altijd beter dan probleemoplossend bouwen, dus de investering in gedegen bouwadvies van een professionele partner verdient zich altijd terug.
+Aypen is gespecialiseerd in het ontwerpen en uitwerken van bouwplannen voor zowel grote als kleine bouwprojecten. Want of u nu van plan bent om een geheel nieuw pand te bouwen of slechts een klein deel van uw woning wil verbouwen: met onze ervaring en vakbekwaamheid pakken wij uw bouwproject altijd met passie, gedrevenheid en enthousiasme op.
+
+Wij zijn vertrouwd met het geven van bouwadvies voor nieuwbouw, verbouw en renovatie. En bent u van plan een project te starten met een combinatie van nieuwbouw en bestaande bouw? Ook dan kunt u bij Aypen terecht voor professioneel bouwadvies. Bent u benieuwd wat wij voor uw bouwproject kunnen betekenen? Neem dan contact met ons op, want wij adviseren u graag.
