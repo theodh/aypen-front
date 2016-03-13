@@ -2,8 +2,8 @@
 layout: page-menu-left
 menu-left: menu-zonwering.html
 mainImageUrl: /img/screens.jpg
-mainImageHeight:
-mainImageWidth: 100%
+mainImageHeight: 300px
+mainImageWidth: 217px
 title: Screens
 description: Uitleg over screens
 keywords: Zonwering, Screens

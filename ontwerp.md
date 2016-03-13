@@ -1,7 +1,7 @@
 ---
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl:
+mainImageUrl: /img/ontwerp-proces-architectuur.jpg
 mainImageHeight:
 mainImageWidth: 100%
 title: Advies & Ontwerp
