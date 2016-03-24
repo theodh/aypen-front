@@ -22,3 +22,28 @@
 <script src="/js/jquery.mixitup.min.js"></script> <!-- MixIt UP JS -->
 <script src="/js/custom.js"></script> <!-- Custom JS -->
 <script src="/js/jquery.ddslick.min.js"></script> <!-- Custom JS -->
+
+{% if page.aypentool %}
+<script type='text/javascript' src="{{site.aypentool}}productInfo.php"></script>
+<script type='text/javascript' src="/js/aypen.js"></script> <!-- MixIt UP JS -->
+<script type="application/javascript">
+    var aypenApiUrl = '{{site.aypentool}}';
+</script>
+<script type="application/javascript">
+
+
+    if($('#toolLoader').length > 0)
+    {
+        $.ajax({
+            url: "{{site.aypentool}}/tool/views/bereken.php",
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function(data) {
+                $( "#toolLoader" ).html( data );
+            }
+        });
+    }
+</script>
+{% endif %}
+

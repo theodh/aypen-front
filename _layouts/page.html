@@ -28,8 +28,11 @@ layout: default
                     <br>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-push-0 col-md-push-0 col-sm-push-3 col-xs-push-0 sidebar blog-left pull-right">
-
-                    {% include algemene-informatie.html %}
+                    {% if page.sideInfo %}
+                        {{ page.sideInfo }}
+                    {% else %}
+                        {% include algemene-informatie.html %}
+                    {% endif %}
                 </div>
 
             </article> <!-- /article -->

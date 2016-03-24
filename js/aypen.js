@@ -120,6 +120,17 @@ function loadTool(apiUrl) {
         $('#cart').show().html('<p>' + data + '<p>');
     });
 
+    $.ajax({
+        xhrFields: {
+            withCredentials: true
+        },
+        url: apiUrl + 'winkelwagen.php',
+        method: 'GET',
+        headers: {'id': $(this).parent().attr("id")},
+        success: function(data){
+            $('#cart').show().html('<p>' + data + '<p>');
+        }
+    });
 
     var ddProfile = [
         {
@@ -613,39 +624,78 @@ function loadTool(apiUrl) {
         $('#chooseQuantity>.dd-select>.dd-selected-value').attr('name', 'quantity');
         $('#chooseQuantity>.dd-select>.dd-selected-value').attr('id', 'quantity');
 
-        $.post(apiUrl + 'berekenTool.php', $('#bereken-form').serialize() + "&" + $('.dd-selected-value').serialize(), function (data) {
-            $('#bereken-message').show().html('<p>' + data + '</p>');
+
+        $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
+            url: apiUrl + 'berekenTool.php',
+            method: 'POST',
+            data: $('#bereken-form').serialize() + "&" + $('.dd-selected-value').serialize(),
+
+            success: function(data){
+                $('#bereken-message').show().html('<p>' + data + '</p>');
+            }
         });
+
         return false;
     });
 
     $('#bereken-message').on('click', '.add', function () {
-        $.post(apiUrl + 'winkelwagen.php', {'id': this.id}, function (data) {
-            location.reload();
+
+        $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
+            url: apiUrl + 'winkelwagen.php',
+            method: 'POST',
+            data: {'id': this.id},
+            success: function(data){
+                location.reload();
+            }
         });
+
         return false;
 
     });
 
     $('#cart').on('click','.removeProduct', function(){
         $.ajax({
-            url: apiUrl + 'winkelwagen.php',
-            type: 'DELETE',
-            headers: {'id': $(this).parent().attr("id")},
+            xhrFields: {
+                withCredentials: true
+            },
+            url: apiUrl + 'winkelwagenDelete.php',
+            type: 'POST',
+            data: {'id': $(this).parent().attr("id")},
             success: function(result){
             }
         });
-        $.get(apiUrl + 'winkelwagen.php', function (data) {
-            $('#cart').show().html('<p>' + data + '<p>');
+
+        $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
+            url: apiUrl + 'winkelwagen.php',
+            method: 'GET',
+            success: function(data){
+                $('#cart').show().html('<p>' + data + '<p>');
+            }
         });
     });
 
     $('#cart').on('click','.btn-offerte',function(e){
         e.preventDefault();
-        $.post( apiUrl + 'offerteAanvraag.php',$('#offerte-form').serialize(),function(data){
-            $('#mailInfoAypen').html('<p>' + data + '</p>');
 
-
+        $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
+            url: apiUrl + 'offerteAanvraag.php',
+            method: 'POST',
+            data: $('#offerte-form').serialize(),
+            success: function(data){
+                $('#mailInfoAypen').html(data);
+            }
         });
     });
 
