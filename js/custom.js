@@ -1,26 +1,5 @@
 "use strict";
 
-var isSafari = (/Safari/.test(navigator.userAgent));
-var firstTimeSession = 0;
-
-function submitSessionForm() {
-	if (firstTimeSession == 0) {
-		firstTimeSession = 1;
-		$("#sessionform").submit();
-		setTimeout(processApplication(),2000);
-	}
-}
-
-if (isSafari) {
-	$("body").append('<iframe id="sessionframe" name="sessionframe" onload="submitSessionForm()" src="' + aypenApiUrl + 'blank.php" style="display:none;"></iframe><form id="sessionform" enctype="application/x-www-form-urlencoded" action="' + aypenApiUrl + 'startsession.php" target="sessionframe" action="post"></form>');
-} else {
-	processApplication();
-}
-
-function processApplication() {
-	
-}
-
 function PopupCenter(url, title, w, h) {
 	// Fixes dual-screen position                         Most browsers      Firefox
 	var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
