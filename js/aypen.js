@@ -122,10 +122,10 @@ function refreshOptions() {
 
 }
 
-
 function loadTool(apiUrl) {
 
     $('.info_rightside').hide();
+
 
     $.ajax({
         xhrFields: {
@@ -658,7 +658,15 @@ function loadTool(apiUrl) {
             method: 'POST',
             data: {'id': this.id},
             success: function(data){
-                location.reload();
+
+                if($('#toolComponent').val() === undefined)
+                {
+                    location.reload();
+                }
+                else
+                {
+                    location.href = '/bereken';
+                }
             }
         });
 

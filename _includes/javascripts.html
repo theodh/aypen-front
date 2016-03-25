@@ -30,12 +30,17 @@
     var aypenApiUrl = '{{site.aypentool}}';
 </script>
 <script type="application/javascript">
-
+    loadToolComponent = '';
 
     if($('#toolLoader').length > 0)
     {
+        if($('#toolComponent').val() !== undefined)
+        {
+            loadToolComponent = '?toolComponent=' + $('#toolComponent').val();
+        }
+
         $.ajax({
-            url: "{{site.aypentool}}/tool/views/bereken.php",
+            url: "{{site.aypentool}}/tool/views/bereken.php" + loadToolComponent,
             xhrFields: {
                 withCredentials: true
             },

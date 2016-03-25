@@ -4,6 +4,7 @@ menu-left: menu-aanbod.html
 mainImageUrl:
 mainImageHeight:
 mainImageWidth: 100%
+aypentool: slidingdoor
 title: Schuifpuien
 description: Uitleg over schuifpuien
 keywords: schuifpuien, vouwwand, tuindeur

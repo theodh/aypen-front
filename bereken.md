@@ -3,7 +3,7 @@ layout: page
 description: bereken tool
 keywords: bereken tool
 author: Theo den Hollander
-aypentool: main
+aypentool: all
 sideInfo: "<span id='cart'></span>"
 ---
 <h3>Bereken</h3>
