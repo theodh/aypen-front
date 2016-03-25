@@ -22,13 +22,13 @@
 <script src="/js/jquery.mixitup.min.js"></script> <!-- MixIt UP JS -->
 <script src="/js/custom.js"></script> <!-- Custom JS -->
 <script src="/js/jquery.ddslick.min.js"></script> <!-- Custom JS -->
+<script type="application/javascript">
+    var aypenApiUrl = '{{site.aypentool}}';
+</script>
 
 {% if page.aypentool %}
 <script type='text/javascript' src="{{site.aypentool}}productInfo.php"></script>
 <script type='text/javascript' src="/js/aypen.js"></script> <!-- MixIt UP JS -->
-<script type="application/javascript">
-    var aypenApiUrl = '{{site.aypentool}}';
-</script>
 <script type="application/javascript">
     loadToolComponent = '';
 
@@ -52,3 +52,23 @@
 </script>
 {% endif %}
 
+{% if page.contact-tool %}
+<script type="application/javascript">
+    $("#contact-form").submit(function(e){
+        $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
+            url: aypenApiUrl + 'send.php',
+            method: 'POST',
+            data: $('#contact-form').serialize(),
+
+            success: function(data){
+                $('#contact-message').show().html('<p>' + data + '</p>');
+            }
+        });
+
+        return false;
+    });
+</script>
+{% endif %}
