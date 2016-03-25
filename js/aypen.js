@@ -1,3 +1,13 @@
+$.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
+    dataType: 'text',
+    options.crossDomain ={
+        crossDomain: true
+    };
+    options.xhrFields = {
+        withCredentials: true
+    };
+});
+
 function refreshCategory(category, nav)
 {
     $('#nav_window').removeClass('active');
@@ -116,9 +126,6 @@ function refreshOptions() {
 function loadTool(apiUrl) {
 
     $('.info_rightside').hide();
-    $.get(apiUrl + 'winkelwagen.php', function (data) {
-        $('#cart').show().html('<p>' + data + '<p>');
-    });
 
     $.ajax({
         xhrFields: {
