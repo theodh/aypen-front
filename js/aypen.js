@@ -149,14 +149,14 @@ function loadTool(apiUrl) {
             "Gelijktijdig bestaat een hoge compatibiliteit met andere GEALAN-systeemfamilies Overtuigende techniek. De vleugel-bouwdiepte van 74 mm in het systeem GEALAN NL plus en de beproefde vier-kamer-vorm staan garant voor een uitstekende warmte-isolatie. " +
             "Samen met functieglas kunnen zeer goede U-waarden worden bereikt. Ook de kadergeometrie is geoptimaliseerd. De stalen profielen liggen direct tegen de verstevigingkamers zodat er geen tussenruimtes ontstaan. Bovendien onderscheiden deze zich door duidelijk betere traagheidsmomenten. " +
             "De statische waarden van de vier-kamer-vleugelprofielen zijn in vergelijking met een vlak profiel bijna dubbel zo hoog. Zo kunnen probleemloos grote elementen worden gerealiseerd.",
-            imageSrc: "/img/gealan/sys_nl_plus.jpg"
+            imageSrc: "/img/gealan/gealan_verdiept_profiel_v2.png"
         },
         {
             text: "Vlak profiel",
             value: 2,
             selected: false,
             description: "Het profielsysteem S 8000 IQ beslaat de consequente marktoriëntering van GEALAN. Bij de constructie van dit aanslagdichtingsysteem met 74 mm bouwdiepte stonden efficiency en materiaaloptimalisatie centraal – voor de probleemloze en economische verwerking door vakkundigen.",
-            imageSrc: "/img/gealan/s8000iq_01.jpg"
+            imageSrc: "/img/gealan/gealan_vlak_profiel_v2.png"
         }
     ];
 
