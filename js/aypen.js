@@ -155,7 +155,7 @@ function loadTool(apiUrl) {
             text: "Vlak profiel",
             value: 2,
             selected: false,
-            description: "Het profielsysteem S 8000 IQ beslaat de consequente marktoriëntering van GEALAN. Bij de constructie van dit aanslagdichtingsysteem met 74 mm bouwdiepte stonden efficiency en materiaaloptimalisatie centraal – voor de probleemloze en economische verwerking door vakkundigen.",
+            description: "Dit profielsysteem beslaat de consequente marktoriëntering van GEALAN. Bij de constructie van dit aanslagdichtingsysteem stonden efficiency en materiaaloptimalisatie centraal – voor de probleemloze en economische verwerking door vakkundigen.",
             imageSrc: "/img/gealan/gealan_vlak_profiel_v2.png"
         }
     ];
