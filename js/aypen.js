@@ -311,6 +311,17 @@ function refreshOptions() {
     $('#group-glas').hide();
     $('#group-slot').hide();
     $('#group-slot-beslag').hide();
+    $('#group-shutter-engine').hide();
+    $('#group-veranda-light').hide();
+    $('#info-shutter-height').hide();
+
+    $('#colorOptions').show();
+
+    if(ddCategory == 'veranda')
+    {
+        $('#colorOptions').hide();
+        $('#group-veranda-light').show();
+    }
 
     if(ddProduct <= 0)
     {
@@ -325,6 +336,9 @@ function refreshOptions() {
         {
             case 'shutter':
                 $('#group-profile-shutter').show();
+                break;
+            case 'veranda':
+                $('#colorOptions').hide();
                 break;
             default:
                 $('#group-profile').show();
@@ -354,8 +368,23 @@ function refreshOptions() {
 
     if(false && product['keyPart'] > 0)
     {
-        $('#group-overig').show();
         $('#group-slot').show();
+    }
+
+    switch(ddCategory)
+    {
+        case 'shutter':
+
+            $('#info-shutter-height').show();
+            if(product['shutterEngine'] == 1)
+            {
+                $('#group-shutter-engine').show();
+            }
+            break;
+        case 'veranda':
+
+            break;
+
     }
 
 }
@@ -436,6 +465,70 @@ function loadTool(apiUrl) {
             $('#bereken-message').hide();
         }
     });
+
+    var ddProfileShutterEngine = [
+        {
+            text: "Handbediening (schakelaar)",
+            value: 1,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "Standaard afstandsbediening, RTS-1",
+            value: 2,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "4 kanalen afstandsbediening, RTS-2",
+            value: 3,
+            selected: false,
+            description: "Met deze 4 kanalen afstandsbediening kunt u maximaal 4 rolluiken bedienen.",
+            imageSrc: ""
+        }
+    ];
+
+    $('#chooseShutterEngine').ddslick({
+        data: ddProfileShutterEngine,
+        width: "100%",
+        truncateDescription: true,
+        selectText: "Kies bediening motor",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+    var ddVerandaLight = [
+        {
+            text: "Geen verlichting",
+            value: 1,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "Set van 6 led-lampen",
+            value: 2,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        }
+    ];
+
+    $('#chooseVerandaLight').ddslick({
+        data: ddVerandaLight,
+        width: "100%",
+        truncateDescription: true,
+        selectText: "Optie verlichting",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
 
     var ddKozijntypeMateriaal = [
         {
@@ -749,6 +842,13 @@ function loadTool(apiUrl) {
 
         $('#chooseProfileShutter>.dd-select>.dd-selected-value').attr('name', 'profileShutter');
         $('#chooseProfileShutter>.dd-select>.dd-selected-value').attr('id', 'profileShutter');
+
+        $('#chooseShutterEngine>.dd-select>.dd-selected-value').attr('name', 'shutterEngine');
+        $('#chooseShutterEngine>.dd-select>.dd-selected-value').attr('id', 'shutterEngine');
+
+        $('#chooseVerandaLight>.dd-select>.dd-selected-value').attr('name', 'verandaLight');
+        $('#chooseVerandaLight>.dd-select>.dd-selected-value').attr('id', 'verandaLight');
+
         
         $('#chooseAanslag>.dd-select>.dd-selected-value').attr('name', 'met_aanslag');
         $('#chooseAanslag>.dd-select>.dd-selected-value').attr('id', 'met_aanslag');
