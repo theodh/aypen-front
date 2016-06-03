@@ -4,6 +4,7 @@ menu-left: menu-zonwering.html
 mainImageUrl: /img/rolluiken.jpg
 mainImageHeight:
 mainImageWidth: 100%
+aypentool: shutter
 title: Rolluiken
 description: Uitleg over rolluiken
 keywords: Rolluiken

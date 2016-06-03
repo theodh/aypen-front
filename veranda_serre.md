@@ -4,6 +4,7 @@ menu-left: menu-aanbod.html
 mainImageUrl: /img/serre.jpg
 mainImageHeight:
 mainImageWidth: 100%
+aypentool: veranda
 title: Veranda's & Serres
 description: Uitleg over veranda's & serres
 keywords: veranda, serre, tuinkamer
