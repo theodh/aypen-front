@@ -13,222 +13,20 @@ function refreshCategory(category, nav)
     $('#nav_window').removeClass('active');
     $('#nav_door').removeClass('active');
     $('#nav_slidingdoor').removeClass('active');
+    $('#nav_shutter').removeClass('active');
+    $('#nav_veranda').removeClass('active');
 
     $(nav).addClass('active');
 
     $('#chooseCategory').val(category);
     $('#bereken-message').hide();
+    refreshColor();
     refreshType();
     refreshOptions();
 }
 
-function refreshType()
+function refreshColor()
 {
-    var ddType = [
-        {
-            text: "Kies type",
-            value: "0",
-            selected: true,
-            description: "",
-            imageSrc: ""
-        }];
-
-    var ddCategory = $('#chooseCategory').val();
-
-    $.each(aypen_pi['product'], function(i, item) {
-
-        if(item['category'] == ddCategory)
-        {
-
-            ddType.push({
-                text: item['description'],
-                value: i,
-                selected: false,
-                description: "",
-                imageSrc: "/tool/img/" + i + ".gif"
-            });
-        }
-    });
-
-
-    $('#chooseType').ddslick("destroy");
-    $("#chooseType").empty();
-    $('#chooseType').ddslick({
-        data: ddType,
-        width: "100%",
-        truncateDescription: false,
-        selectText: "Kies type",
-        imagePosition: "left",
-        onSelected: function (selectedData) {
-            $('#bereken-message').hide();
-            refreshOptions();
-        }
-    });
-}
-
-function refreshOptions() {
-    var ddProduct = $('#chooseType').data('ddslick').selectedData.value;
-
-    $('#group-profile').hide();
-    $('#group-aanslag').hide();
-
-    //$('#group-kozijn-binnen').hide();
-    //$('#group-draaideel-buiten').hide();
-    //$('#group-draaideel-binnen').hide();
-
-    $('.group-draaidelen').hide();
-
-    $('#group-overig').hide();
-    $('#group-glas').hide();
-    $('#group-slot').hide();
-    $('#group-slot-beslag').hide();
-
-    if(ddProduct <= 0)
-    {
-        return;
-    }
-
-    var product = aypen_pi['product'][ddProduct];
-
-    if(product['hasProfile'])
-    {
-        $('#group-profile').show();
-        //$('#group-aanslag').show();
-    }
-
-    if(product['amountTurningPart'] > 0)
-    {
-        $('.group-draaidelen').show();
-        $('#group-draaideel-buiten').show();
-        $('#group-draaideel-binnen').show();
-    }
-
-    if(product['windowPart'] > 0)
-    {
-        $('#group-overig').show();
-        $('#group-glas').show();
-    }
-
-    if(product['slotBeslagPart'] > 0)
-    {
-        $('#group-slot-beslag').show();
-    }
-
-    if(false && product['keyPart'] > 0)
-    {
-        $('#group-overig').show();
-        $('#group-slot').show();
-    }
-
-}
-
-function loadTool(apiUrl) {
-
-    $('.info_rightside').hide();
-
-
-    $.ajax({
-        xhrFields: {
-            withCredentials: true
-        },
-        url: apiUrl + 'winkelwagen.php',
-        method: 'GET',
-        headers: {'id': $(this).parent().attr("id")},
-        success: function(data){
-            $('#cart').show().html('<p>' + data + '<p>');
-        }
-    });
-
-    var ddProfile = [
-        {
-            text: "Verdiept profiel",
-            value: 1,
-            selected: false,
-            description: "Het kozijnsysteem GEALAN NL plus combineert de modernste profieltechnologie met de traditionele eisen van de Nederlandse markt. Zachte contouren en smalle aanzichtbreedtes leiden tot optisch evenwicht en bevallige proporties." +
-            " Technisch blijft met het systeem GEALAN NL plus geen wens meer onvervuld. Bouwdiepte, kamervorming en zinvolle detailconstructies voldoen aan alle verwachtingen betreffende warmte- en geluidsisolatie, statica en inbraakpreventie. " +
-            "Gelijktijdig bestaat een hoge compatibiliteit met andere GEALAN-systeemfamilies Overtuigende techniek. De vleugel-bouwdiepte van 74 mm in het systeem GEALAN NL plus en de beproefde vier-kamer-vorm staan garant voor een uitstekende warmte-isolatie. " +
-            "Samen met functieglas kunnen zeer goede U-waarden worden bereikt. Ook de kadergeometrie is geoptimaliseerd. De stalen profielen liggen direct tegen de verstevigingkamers zodat er geen tussenruimtes ontstaan. Bovendien onderscheiden deze zich door duidelijk betere traagheidsmomenten. " +
-            "De statische waarden van de vier-kamer-vleugelprofielen zijn in vergelijking met een vlak profiel bijna dubbel zo hoog. Zo kunnen probleemloos grote elementen worden gerealiseerd.",
-            imageSrc: "/img/gealan/gealan_verdiept_profiel_v2.png"
-        },
-        {
-            text: "Vlak profiel",
-            value: 2,
-            selected: false,
-            description: "Dit profielsysteem beslaat de consequente marktoriëntering van GEALAN. Bij de constructie van dit aanslagdichtingsysteem stonden efficiency en materiaaloptimalisatie centraal – voor de probleemloze en economische verwerking door vakkundigen.",
-            imageSrc: "/img/gealan/gealan_vlak_profiel_v2.png"
-        }
-    ];
-
-    $('#chooseProfile').ddslick({
-        data: ddProfile,
-        width: "100%",
-        truncateDescription: true,
-        selectText: "Kies type profiel",
-        imagePosition: "left",
-        onSelected: function (selectedData) {
-            $('#bereken-message').hide();
-        }
-    });
-
-    var ddKozijntypeMateriaal = [
-        {
-            text: "Wit",
-            value: 1,
-            selected: false,
-            description: "",
-            imageSrc: ""
-        },
-        {
-            text: "Creme",
-            value: 2,
-            selected: false,
-            description: "",
-            imageSrc: ""
-        }
-    ];
-
-    $('#chooseKozijntypeMateriaalBuiten').ddslick({
-        data: ddKozijntypeMateriaal,
-        width: "100%",
-        truncateDescription: false,
-        selectText: "Kies kozijn materiaal type voor buitenkant",
-        imagePosition: "left",
-        onSelected: function (selectedData) {
-            $('#bereken-message').hide();
-        }
-    });
-
-    $('#chooseKozijntypeMateriaalBinnen').ddslick({
-        data: ddKozijntypeMateriaal,
-        width: "100%",
-        truncateDescription: false,
-        selectText: "Kies kozijn materiaal type voor binnenkant",
-        imagePosition: "left",
-        onSelected: function (selectedData) {
-            $('#bereken-message').hide();
-        }
-    });
-
-    var ddType = [
-        {
-            text: "Kies kozijn/deur/schuifpui",
-            value: "0",
-            selected: true,
-            description: "",
-            imageSrc: ""
-        }];
-
-    $('#chooseType').ddslick({
-        data: ddType,
-        width: "100%",
-        truncateDescription: true,
-        selectText: "Kies type",
-        imagePosition: "left",
-        onSelected: function (selectedData) {
-            $('#bereken-message').hide();
-        }
-    });
 
 
     var ddKleur = [
@@ -318,6 +116,87 @@ function loadTool(apiUrl) {
         }
     ];
 
+    var ddCategory = $('#chooseCategory').val();
+
+    $('#labelChooseFrameBuiten').html('Kleur kozijn buitenkant');
+    $('#labelChooseFrameBinnen').html('Kleur kozijn binnenkant');
+    switch(ddCategory)
+    {
+        case 'shutter':
+            $('#labelChooseFrameBuiten').html('Kleur omkasting');
+            $('#labelChooseFrameBinnen').html('Kleur lamellen');
+            ddKleur = [{
+                    text: "Grijs",
+                    value: "Grijs",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "H-Beige",
+                    value: "H-Beige",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "Creme",
+                    value: "Creme",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "Ivoor",
+                    value: "Ivoor",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "Creme",
+                    value: "Creme",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "Natural",
+                    value: "Natural",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "Staalblauw",
+                    value: "Staalblauw",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "Antraciet",
+                    value: "Antraciet",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                },
+                {
+                    text: "Verkeerswit",
+                    value: "Verkeerswit",
+                    selected: false,
+                    description: "",
+                    imageSrc: ""
+                }
+
+            ];
+            break;
+    }
+
+
+    $('#chooseFrameBuiten').ddslick("destroy");
+    $("#chooseFrameBuiten").empty();
+
     $('#chooseFrameBuiten').ddslick({
         data: ddKleur,
         width: "100%",
@@ -328,6 +207,9 @@ function loadTool(apiUrl) {
             $('#bereken-message').hide();
         }
     });
+
+    $('#chooseFrameBinnen').ddslick("destroy");
+    $("#chooseFrameBinnen").empty();
     $('#chooseFrameBinnen').ddslick({
         data: ddKleur,
         width: "100%",
@@ -338,6 +220,9 @@ function loadTool(apiUrl) {
             $('#bereken-message').hide();
         }
     });
+
+    $('#chooseDraaideelBuiten').ddslick("destroy");
+    $("#chooseDraaideelBuiten").empty();
     $('#chooseDraaideelBuiten').ddslick({
         data: ddKleur,
         width: "100%",
@@ -348,6 +233,9 @@ function loadTool(apiUrl) {
             $('#bereken-message').hide();
         }
     });
+
+    $('#chooseDraaideelBinnen').ddslick("destroy");
+    $("#chooseDraaideelBinnen").empty();
     $('#chooseDraaideelBinnen').ddslick({
         data: ddKleur,
         width: "100%",
@@ -358,6 +246,261 @@ function loadTool(apiUrl) {
             $('#bereken-message').hide();
         }
     });
+
+
+}
+
+function refreshType()
+{
+    var ddType = [
+        {
+            text: "Kies type",
+            value: "0",
+            selected: true,
+            description: "",
+            imageSrc: ""
+        }];
+
+    var ddCategory = $('#chooseCategory').val();
+
+    $.each(aypen_pi['product'], function(i, item) {
+
+        if(item['category'] == ddCategory)
+        {
+
+            ddType.push({
+                text: item['description'],
+                value: i,
+                selected: false,
+                description: "",
+                imageSrc: "/tool/img/" + i + ".gif"
+            });
+        }
+    });
+
+
+    $('#chooseType').ddslick("destroy");
+    $("#chooseType").empty();
+    $('#chooseType').ddslick({
+        data: ddType,
+        width: "100%",
+        truncateDescription: false,
+        selectText: "Kies type",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+            refreshOptions();
+        }
+    });
+}
+
+function refreshOptions() {
+    var ddProduct = $('#chooseType').data('ddslick').selectedData.value;
+    var ddCategory = $('#chooseCategory').val();
+    $('#group-profile').hide();
+    $('#group-aanslag').hide();
+    $('#group-profile-shutter').hide();
+
+    //$('#group-kozijn-binnen').hide();
+    //$('#group-draaideel-buiten').hide();
+    //$('#group-draaideel-binnen').hide();
+
+    $('.group-draaidelen').hide();
+
+    $('#group-overig').hide();
+    $('#group-glas').hide();
+    $('#group-slot').hide();
+    $('#group-slot-beslag').hide();
+
+    if(ddProduct <= 0)
+    {
+        return;
+    }
+
+    var product = aypen_pi['product'][ddProduct];
+
+    if(product['hasProfile'])
+    {
+        switch(ddCategory)
+        {
+            case 'shutter':
+                $('#group-profile-shutter').show();
+                break;
+            default:
+                $('#group-profile').show();
+                break;
+        }
+        
+        //$('#group-aanslag').show();
+    }
+
+    if(product['amountTurningPart'] > 0)
+    {
+        $('.group-draaidelen').show();
+        $('#group-draaideel-buiten').show();
+        $('#group-draaideel-binnen').show();
+    }
+
+    if(product['windowPart'] > 0)
+    {
+        $('#group-overig').show();
+        $('#group-glas').show();
+    }
+
+    if(product['slotBeslagPart'] > 0)
+    {
+        $('#group-slot-beslag').show();
+    }
+
+    if(false && product['keyPart'] > 0)
+    {
+        $('#group-overig').show();
+        $('#group-slot').show();
+    }
+
+}
+
+function loadTool(apiUrl) {
+
+    $('.info_rightside').hide();
+
+
+    $.ajax({
+        xhrFields: {
+            withCredentials: true
+        },
+        url: apiUrl + 'winkelwagen.php',
+        method: 'GET',
+        headers: {'id': $(this).parent().attr("id")},
+        success: function(data){
+            $('#cart').show().html('<p>' + data + '<p>');
+        }
+    });
+
+    var ddProfile = [
+        {
+            text: "Verdiept profiel",
+            value: 1,
+            selected: false,
+            description: "Het kozijnsysteem GEALAN NL plus combineert de modernste profieltechnologie met de traditionele eisen van de Nederlandse markt. Zachte contouren en smalle aanzichtbreedtes leiden tot optisch evenwicht en bevallige proporties." +
+            " Technisch blijft met het systeem GEALAN NL plus geen wens meer onvervuld. Bouwdiepte, kamervorming en zinvolle detailconstructies voldoen aan alle verwachtingen betreffende warmte- en geluidsisolatie, statica en inbraakpreventie. " +
+            "Gelijktijdig bestaat een hoge compatibiliteit met andere GEALAN-systeemfamilies Overtuigende techniek. De vleugel-bouwdiepte van 74 mm in het systeem GEALAN NL plus en de beproefde vier-kamer-vorm staan garant voor een uitstekende warmte-isolatie. " +
+            "Samen met functieglas kunnen zeer goede U-waarden worden bereikt. Ook de kadergeometrie is geoptimaliseerd. De stalen profielen liggen direct tegen de verstevigingkamers zodat er geen tussenruimtes ontstaan. Bovendien onderscheiden deze zich door duidelijk betere traagheidsmomenten. " +
+            "De statische waarden van de vier-kamer-vleugelprofielen zijn in vergelijking met een vlak profiel bijna dubbel zo hoog. Zo kunnen probleemloos grote elementen worden gerealiseerd.",
+            imageSrc: "/img/gealan/gealan_verdiept_profiel_v2.png"
+        },
+        {
+            text: "Vlak profiel",
+            value: 2,
+            selected: false,
+            description: "Dit profielsysteem beslaat de consequente marktoriëntering van GEALAN. Bij de constructie van dit aanslagdichtingsysteem stonden efficiency en materiaaloptimalisatie centraal – voor de probleemloze en economische verwerking door vakkundigen.",
+            imageSrc: "/img/gealan/gealan_vlak_profiel_v2.png"
+        }
+    ];
+
+    $('#chooseProfile').ddslick({
+        data: ddProfile,
+        width: "100%",
+        truncateDescription: true,
+        selectText: "Kies type profiel",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+    var ddProfileShutter = [
+        {
+            text: "HTF profiel",
+            value: 1,
+            selected: false,
+            description: "",
+            imageSrc: "/img/rolluik_htf.png"
+        },
+        {
+            text: "LHTF profiel",
+            value: 2,
+            selected: false,
+            description: "",
+            imageSrc: "/img/rolluik_lhtf.png"
+        }
+    ];
+
+    $('#chooseProfileShutter').ddslick({
+        data: ddProfileShutter,
+        width: "100%",
+        truncateDescription: true,
+        selectText: "Kies type profiel",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+    var ddKozijntypeMateriaal = [
+        {
+            text: "Wit",
+            value: 1,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "Creme",
+            value: 2,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        }
+    ];
+
+    $('#chooseKozijntypeMateriaalBuiten').ddslick({
+        data: ddKozijntypeMateriaal,
+        width: "100%",
+        truncateDescription: false,
+        selectText: "Kies kozijn materiaal type voor buitenkant",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+    $('#chooseKozijntypeMateriaalBinnen').ddslick({
+        data: ddKozijntypeMateriaal,
+        width: "100%",
+        truncateDescription: false,
+        selectText: "Kies kozijn materiaal type voor binnenkant",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+    var ddType = [
+        {
+            text: "Kies kozijn/deur/schuifpui",
+            value: "0",
+            selected: true,
+            description: "",
+            imageSrc: ""
+        }];
+
+    $('#chooseType').ddslick({
+        data: ddType,
+        width: "100%",
+        truncateDescription: true,
+        selectText: "Kies type",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+
+
+
+
+
 
 
 
@@ -604,6 +747,9 @@ function loadTool(apiUrl) {
         $('#chooseProfile>.dd-select>.dd-selected-value').attr('name', 'profile');
         $('#chooseProfile>.dd-select>.dd-selected-value').attr('id', 'profile');
 
+        $('#chooseProfileShutter>.dd-select>.dd-selected-value').attr('name', 'profileShutter');
+        $('#chooseProfileShutter>.dd-select>.dd-selected-value').attr('id', 'profileShutter');
+        
         $('#chooseAanslag>.dd-select>.dd-selected-value').attr('name', 'met_aanslag');
         $('#chooseAanslag>.dd-select>.dd-selected-value').attr('id', 'met_aanslag');
 
