@@ -19,6 +19,8 @@ aypentool: "https://dyn.aypen.nl/"
 twitter_username: jekyllrb
 github_username:  jekyll
 
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown
