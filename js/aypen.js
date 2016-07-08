@@ -440,14 +440,14 @@ function loadTool(apiUrl) {
 
     var ddProfileShutter = [
         {
-            text: "HTF profiel",
+            text: "HTF",
             value: 1,
             selected: false,
             description: "",
             imageSrc: "/img/rolluik_htf.png"
         },
         {
-            text: "LHTF profiel",
+            text: "LHTF",
             value: 2,
             selected: false,
             description: "",
@@ -459,7 +459,7 @@ function loadTool(apiUrl) {
         data: ddProfileShutter,
         width: "100%",
         truncateDescription: true,
-        selectText: "Kies type profiel",
+        selectText: "Kies type geleider",
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
