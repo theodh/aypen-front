@@ -163,7 +163,7 @@ function revolutionSliderActiver () {
 		jQuery("#slider1").revolution({
 			sliderType:"standard",
 			sliderLayout:"auto",
-			delay:9000,
+			delay:3000,
 			navigation: {
 				arrows:{enable:true}
 			},
