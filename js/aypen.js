@@ -308,12 +308,22 @@ function refreshOptions() {
     $('#group-veranda-light').hide();
     $('#info-shutter-height').hide();
 
+
     $('#colorOptions').show();
 
     if(ddCategory == 'veranda')
     {
         $('#colorOptions').hide();
         $('#group-veranda-light').show();
+    }
+
+    $('#group-door-option-1').hide();
+    $('#group-door-option-2').hide();
+
+    if(ddCategory == 'door')
+    {
+        $('#group-door-option-1').show();
+        $('#group-door-option-2').show();
     }
 
     if(ddProduct <= 0)
@@ -609,7 +619,61 @@ function loadTool(apiUrl) {
 
 
 
+    var ddDoorOption1 = [
+        {
+            text: "Linkscharnierend",
+            value: "1",
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "Rechtsscharnierend",
+            value: "2",
+            selected: false,
+            description: "",
+            imageSrc: ""
+        }
+    ];
 
+    $('#chooseDoorOption1').ddslick({
+        data: ddDoorOption1,
+        width: "100%",
+        truncateDescription: false,
+        selectText: "Kies optie deur",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+    var ddDoorOption2 = [
+        {
+            text: "Geen optie",
+            value: "1",
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "Standaard duwer ",
+            value: "2",
+            selected: false,
+            description: "600mm RVS",
+            imageSrc: ""
+        }
+    ];
+
+    $('#chooseDoorOption2').ddslick({
+        data: ddDoorOption2,
+        width: "100%",
+        truncateDescription: false,
+        selectText: "Kies optie deur",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
 
 
 
@@ -895,6 +959,11 @@ function loadTool(apiUrl) {
         $('#chooseQuantity>.dd-select>.dd-selected-value').attr('name', 'quantity');
         $('#chooseQuantity>.dd-select>.dd-selected-value').attr('id', 'quantity');
 
+        $('#chooseDoorOption1>.dd-select>.dd-selected-value').attr('name', 'door_option1');
+        $('#chooseDoorOption1>.dd-select>.dd-selected-value').attr('id', 'door_option1');
+
+        $('#chooseDoorOption2>.dd-select>.dd-selected-value').attr('name', 'door_option2');
+        $('#chooseDoorOption2>.dd-select>.dd-selected-value').attr('id', 'door_option2');
 
         $.ajax({
             xhrFields: {
