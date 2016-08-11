@@ -28,7 +28,7 @@ function refreshCategory(category, nav)
 function refreshColor()
 {
 
-
+    $('#group-kozijn-binnen').show();
     var ddKleur = [
         {
             text: "Ral 9010 wit glad",
@@ -184,6 +184,26 @@ function refreshColor()
 
             ];
             break;
+        case 'veranda':
+            $('#labelChooseFrameBuiten').html('Kleur veranda');
+            $('#group-kozijn-binnen').hide();
+            ddKleur = [{
+                text: "Ral 9001 ivoor",
+                value: "Ral 9001 ivoor",
+                selected: false,
+                description: "",
+                imageSrc: ""
+            },
+            {
+                text: "Wit antractiet",
+                value: "Wit antractiet",
+                selected: false,
+                description: "",
+                imageSrc: ""
+            }
+            ];
+
+            break;
     }
 
 
@@ -294,8 +314,6 @@ function refreshOptions() {
     $('#group-aanslag').hide();
     $('#group-profile-shutter').hide();
 
-
-
     //$('#group-kozijn-binnen').hide();
     //$('#group-draaideel-buiten').hide();
     //$('#group-draaideel-binnen').hide();
@@ -309,6 +327,7 @@ function refreshOptions() {
     $('#group-shutter-engine').hide();
     $('#group-veranda-light').hide();
     $('#group-veranda-gutter').hide();
+    $('#group-veranda-roof-type').hide();
     $('#info-shutter-height').hide();
 
 
@@ -316,22 +335,8 @@ function refreshOptions() {
 
     $('#labelHeight').html("Hoogte in mm");
 
-    if(ddCategory == 'veranda')
-    {
-        $('#labelHeight').html("Uitval in mm");
-        $('#colorOptions').hide();
-        $('#group-veranda-light').show();
-    }
-
     $('#group-door-option-1').hide();
     $('#group-door-option-2').hide();
-
-    if(ddCategory == 'door')
-    {
-        $('#group-door-option-1').show();
-        $('#group-door-option-2').show();
-
-    }
 
     if(ddProduct <= 0)
     {
@@ -348,7 +353,6 @@ function refreshOptions() {
                 $('#group-profile-shutter').show();
                 break;
             case 'veranda':
-                $('#colorOptions').hide();
                 break;
             default:
                 $('#group-profile').show();
@@ -396,6 +400,11 @@ function refreshOptions() {
             {
                 $('#group-veranda-gutter').show();
             }
+
+            $('#labelHeight').html("Uitval in mm");
+            $('#group-veranda-light').show();
+            $('#group-veranda-roof-type').show();
+
             break;
         case 'door':
             var descriptionDoorOption1 = 'Draairichting vanuit binnenkant';
@@ -406,6 +415,10 @@ function refreshOptions() {
             }
 
             $('#labelChooseDoorOption1').html(descriptionDoorOption1);
+
+            $('#group-door-option-1').show();
+            $('#group-door-option-2').show();
+
             break;
 
     }
@@ -619,6 +632,33 @@ function loadTool(apiUrl) {
         }
     });
 
+    var ddVerandaRoof = [
+        {
+            text: "16mm Polycarbonaat helder",
+            value: 1,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "16mm Polycarbonaat oppaal",
+            value: 2,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        }
+    ];
+
+    $('#chooseVerandaRoofType').ddslick({
+        data: ddVerandaRoof,
+        width: "100%",
+        truncateDescription: true,
+        selectText: "Kies daktype",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
 
     var ddKozijntypeMateriaal = [
         {
@@ -1029,6 +1069,9 @@ function loadTool(apiUrl) {
 
         $('#chooseVerandaGutter>.dd-select>.dd-selected-value').attr('name', 'veranda_gutter');
         $('#chooseVerandaGutter>.dd-select>.dd-selected-value').attr('id', 'veranda_gutter');
+
+        $('#chooseVerandaRoofType>.dd-select>.dd-selected-value').attr('name', 'veranda_roof');
+        $('#chooseVerandaRoofType>.dd-select>.dd-selected-value').attr('id', 'veranda_roof');
 
         $.ajax({
             xhrFields: {
