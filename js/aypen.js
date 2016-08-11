@@ -294,6 +294,8 @@ function refreshOptions() {
     $('#group-aanslag').hide();
     $('#group-profile-shutter').hide();
 
+
+
     //$('#group-kozijn-binnen').hide();
     //$('#group-draaideel-buiten').hide();
     //$('#group-draaideel-binnen').hide();
@@ -306,6 +308,7 @@ function refreshOptions() {
     $('#group-slot-beslag').hide();
     $('#group-shutter-engine').hide();
     $('#group-veranda-light').hide();
+    $('#group-veranda-gutter').hide();
     $('#info-shutter-height').hide();
 
 
@@ -389,7 +392,10 @@ function refreshOptions() {
             }
             break;
         case 'veranda':
-
+            if(product['gutterType'] > 0)
+            {
+                $('#group-veranda-gutter').show();
+            }
             break;
         case 'door':
             var descriptionDoorOption1 = 'Draairichting vanuit binnenkant';
@@ -579,6 +585,34 @@ function loadTool(apiUrl) {
         width: "100%",
         truncateDescription: true,
         selectText: "Optie verlichting",
+        imagePosition: "left",
+        onSelected: function (selectedData) {
+            $('#bereken-message').hide();
+        }
+    });
+
+    var ddVerandaGutter = [
+        {
+            text: "Standaard ronde goot",
+            value: 1,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
+            text: "Klassieke goot",
+            value: 2,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        }
+    ];
+
+    $('#chooseVerandaGutter').ddslick({
+        data: ddVerandaGutter,
+        width: "100%",
+        truncateDescription: true,
+        selectText: "Kies goot type",
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
@@ -992,6 +1026,9 @@ function loadTool(apiUrl) {
 
         $('#chooseDoorOption2>.dd-select>.dd-selected-value').attr('name', 'door_option2');
         $('#chooseDoorOption2>.dd-select>.dd-selected-value').attr('id', 'door_option2');
+
+        $('#chooseVerandaGutter>.dd-select>.dd-selected-value').attr('name', 'veranda_gutter');
+        $('#chooseVerandaGutter>.dd-select>.dd-selected-value').attr('id', 'veranda_gutter');
 
         $.ajax({
             xhrFields: {
