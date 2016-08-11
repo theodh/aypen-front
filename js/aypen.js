@@ -552,10 +552,24 @@ function loadTool(apiUrl) {
             imageSrc: ""
         },
         {
+            text: "Set van 3 led-lampen",
+            value: 3,
+            selected: false,
+            description: "",
+            imageSrc: ""
+        },
+        {
             text: "Set van 6 led-lampen",
             value: 2,
             selected: false,
             description: "",
+            imageSrc: ""
+        },
+        {
+            text: "Set van 6 led-lampen",
+            value: 4,
+            selected: false,
+            description: "met afstandbediening",
             imageSrc: ""
         }
     ];
