@@ -324,6 +324,7 @@ function refreshOptions() {
     {
         $('#group-door-option-1').show();
         $('#group-door-option-2').show();
+
     }
 
     if(ddProduct <= 0)
@@ -386,6 +387,16 @@ function refreshOptions() {
             break;
         case 'veranda':
 
+            break;
+        case 'door':
+            var descriptionDoorOption1 = 'Draairichting vanuit binnenkant';
+
+            if(product['slotBeslagPart'] == 'outside')
+            {
+                descriptionDoorOption1 = 'Draairichting vanuit buitenkant';
+            }
+
+            $('#labelChooseDoorOption1').html(descriptionDoorOption1);
             break;
 
     }
@@ -621,15 +632,15 @@ function loadTool(apiUrl) {
 
     var ddDoorOption1 = [
         {
-            text: "Linkscharnierend",
-            value: "1",
+            text: "Links scharnierend",
+            value: "left",
             selected: false,
             description: "",
             imageSrc: ""
         },
         {
-            text: "Rechtsscharnierend",
-            value: "2",
+            text: "Rechts scharnierend",
+            value: "right",
             selected: false,
             description: "",
             imageSrc: ""
@@ -640,7 +651,7 @@ function loadTool(apiUrl) {
         data: ddDoorOption1,
         width: "100%",
         truncateDescription: false,
-        selectText: "Kies optie deur",
+        selectText: "Draairichting deur",
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
@@ -656,7 +667,7 @@ function loadTool(apiUrl) {
             imageSrc: ""
         },
         {
-            text: "Standaard duwer ",
+            text: "Standaard duwer",
             value: "2",
             selected: false,
             description: "600mm RVS",
