@@ -311,8 +311,11 @@ function refreshOptions() {
 
     $('#colorOptions').show();
 
+    $('#labelHeight').html("Hoogte in mm");
+
     if(ddCategory == 'veranda')
     {
+        $('#labelHeight').html("Uitval in mm");
         $('#colorOptions').hide();
         $('#group-veranda-light').show();
     }
