@@ -9,4 +9,5 @@ sideInfo: "<span id='cart'></span>"
 <h3>Bereken</h3>
 
 <div id="toolLoader"></div>
+<div id="toolInfo"></div>
 

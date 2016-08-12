@@ -16,10 +16,23 @@ function refreshCategory(category, nav)
     $('#nav_shutter').removeClass('active');
     $('#nav_veranda').removeClass('active');
 
+    $('#toolInfo').hide();
     $(nav).addClass('active');
 
     $('#chooseCategory').val(category);
     $('#bereken-message').hide();
+
+    $.ajax({
+        url: "/tool/info/bereken-info-" + category,
+        xhrFields: {
+            withCredentials: true
+        },
+        success: function(data) {
+            $( "#toolInfo" ).html( data );
+            $('#toolInfo').show();
+        }
+    });
+
     refreshColor();
     refreshType();
     refreshOptions();

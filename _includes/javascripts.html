@@ -35,6 +35,17 @@
         if($('#toolComponent').val() !== undefined)
         {
             loadToolComponent = '?toolComponent=' + $('#toolComponent').val();
+
+            $.ajax({
+                url: "/tool/info/bereken-info-" + $('#toolComponent').val(),
+                xhrFields: {
+                    withCredentials: true
+                },
+                success: function(data) {
+                    $( "#toolInfo" ).html( data );
+                }
+            });
+
         }
 
         $.ajax({
@@ -47,6 +58,8 @@
             }
         });
     }
+
+
 </script>
 {% endif %}
 
