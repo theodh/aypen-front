@@ -1,7 +1,7 @@
 ---
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: /img/rolluiken.jpg
+mainImageUrl: /tool/info/img/Rolluiken-4.jpg
 mainImageHeight:
 mainImageWidth: 100%
 aypentool: shutter

@@ -578,37 +578,40 @@ function expertizeRoundCircle () {
 	};
 }
 
+function loadModules () {
+	clientCarosule();
+	galleryMasonaryLayout();
+	gMap();
+	revolutionSliderActiver();
+	galleryHover();
+	GalleryFilter();
+	mobileNavToggler();
+	customTabServiceTab();
+	wowActivator();
+	contactFormValidation();
+	rqaFormValidation();
+	headerTopSearch();
+	headerTopCart();
+	BannerTabActivation();
+	RequestQoutTabActivation();
+	GalleryFancyboxActivator();
+	footerMenuToggler();
+	ParallaxActivation();
+	SmoothMenuScroll();
+	customTabProductPageTab();
+	videoFancyBox();
+	thmAccrodion();
+	expertizeRoundCircle();
+	teamCarosule();
+	testimonailCarosule();
+}
 
 
 	// Dom Ready Function
 	$(document).on('ready', function () {
 		// add your functions
 		(function ($) {
-			clientCarosule();
-			galleryMasonaryLayout();
-			gMap();
-			revolutionSliderActiver();
-			galleryHover();
-			GalleryFilter();
-			mobileNavToggler();
-			customTabServiceTab();
-			wowActivator();
-			contactFormValidation();
-			rqaFormValidation();
-			headerTopSearch();
-			headerTopCart();
-			BannerTabActivation();
-			RequestQoutTabActivation();
-			GalleryFancyboxActivator();
-			footerMenuToggler();
-			ParallaxActivation();
-			SmoothMenuScroll();
-			customTabProductPageTab();
-			videoFancyBox();
-			thmAccrodion();
-			expertizeRoundCircle();
-			teamCarosule();
-			testimonailCarosule();
+			loadModules();
 
 		})(jQuery);
 

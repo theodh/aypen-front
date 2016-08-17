@@ -29,6 +29,7 @@ function refreshCategory(category, nav)
         },
         success: function(data) {
             $( "#toolInfo" ).html( data );
+            loadModules();
             $('#toolInfo').show();
         }
     });
