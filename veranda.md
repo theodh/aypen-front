@@ -5,9 +5,9 @@ mainImageUrl: /tool/info/img/V905-Iseo-8.jpg
 mainImageHeight:
 mainImageWidth: 100%
 aypentool: veranda
-title: Veranda's & Serres
+title: Veranda's
 description: Uitleg over veranda's & serres
-keywords: veranda, serre, tuinkamer
+keywords: veranda, tuinkamer
 author: Judy Heeres
 ---
 ## Veranda's
