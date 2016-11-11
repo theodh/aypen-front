@@ -5,7 +5,7 @@ mainImageUrl:
 mainImageHeight:
 mainImageWidth: 100%
 title: LED verlichting
-description: Uitleg over LED verlichting
+description: Uitleg over LED verlichting dit moment de meest energiezuinige verlichting
 keywords: LED verlichting
 author: Judy Heeres
 mainImageUrl:
