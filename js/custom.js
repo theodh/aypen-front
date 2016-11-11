@@ -167,8 +167,8 @@ function revolutionSliderActiver () {
 			navigation: {
 				arrows:{enable:true}
 			},
-			gridwidth:1170,
-			gridheight:740
+			gridwidth:600,
+			gridheight:377
 		});
 	};
 }
