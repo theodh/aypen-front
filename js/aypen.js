@@ -1,3 +1,5 @@
+var toolIsloading = true;
+
 $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
     dataType: 'text',
     options.crossDomain ={
@@ -7,6 +9,17 @@ $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
         withCredentials: true
     };
 });
+function ScrollToTool(target)
+{
+    if(toolIsloading)
+    {
+        return;
+    }
+
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 100);
+}
 
 function refreshCategory(category, nav)
 {
@@ -232,6 +245,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -245,6 +259,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -258,6 +273,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -271,6 +287,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -317,6 +334,7 @@ function refreshType()
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
             refreshOptions();
+            ScrollToTool('#group-profile');
         }
     });
 }
@@ -485,6 +503,7 @@ function loadTool(apiUrl) {
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#labelChooseFrameBuiten');
         }
     });
 
@@ -730,6 +749,7 @@ function loadTool(apiUrl) {
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#chooseProfile');
         }
     });
 
@@ -877,6 +897,7 @@ function loadTool(apiUrl) {
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#chooseGlas');
         }
     });
 
@@ -1097,6 +1118,7 @@ function loadTool(apiUrl) {
 
             success: function(data){
                 $('#bereken-message').show().html('<p>' + data + '</p>');
+
             }
         });
 
@@ -1114,14 +1136,17 @@ function loadTool(apiUrl) {
             data: {'id': this.id},
             success: function(data){
 
-                if($('#toolComponent').val() === undefined)
-                {
-                    location.reload();
-                }
-                else
-                {
-                    location.href = '/bereken';
-                }
+                $.ajax({
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    url: apiUrl + 'winkelwagen.php',
+                    method: 'GET',
+                    success: function(data){
+                        $('#cart').show().html('<p>' + data + '<p>');
+                        ScrollToTool('#scrollCartTarget');
+                    }
+                });
             }
         });
 
@@ -1170,5 +1195,9 @@ function loadTool(apiUrl) {
     });
 
     refreshOptions();
-    refreshCategory('window', '#nav_window')
+    refreshCategory('window', '#nav_window');
+
+    toolIsloading = false;
+
+
 };
