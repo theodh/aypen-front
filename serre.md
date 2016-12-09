@@ -5,8 +5,8 @@ mainImageUrl: /img/serre.jpg
 mainImageHeight:
 mainImageWidth: 100%
 title: Serres
-description: Uitleg over veranda's & serres
-keywords: veranda, serre, tuinkamer
+description: Uitleg over serres
+keywords: serre, tuinkamer
 author: Judy Heeres
 ---
 Stelt u zich eens voor, een oase aan licht, langer genieten van het voor- en najaar en meer ruimte in uw woning. Dit alles bereikt u met een serre van Aypen. Of u nou op zoek bent naar extra ruimte voor uw woning, beschutting voor uw zwembad, een overdekte geïsoleerde binnentuin, tuinkamer of zonnige eetkamer; Aypen biedt maatoplossingen voor elke individuele wens.
