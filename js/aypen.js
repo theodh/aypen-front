@@ -16,6 +16,11 @@ function ScrollToTool(target)
         return;
     }
 
+    if($(target).length == 0 || $(target).offset() === undefined  || $(target).offset().top === undefined)
+    {
+        return;
+    }
+
     $('html, body').animate({
         scrollTop: $(target).offset().top
     }, 100);
@@ -356,6 +361,7 @@ function refreshOptions() {
     $('#group-glas').hide();
     $('#group-slot').hide();
     $('#group-slot-beslag').hide();
+    $('#group-panel-door').hide();
     $('#group-shutter-engine').hide();
     $('#group-veranda-light').hide();
     $('#group-veranda-gutter').hide();
@@ -415,6 +421,11 @@ function refreshOptions() {
     if(false && product['keyPart'] > 0)
     {
         $('#group-slot').show();
+    }
+
+    if(product['paneldoor'] > 0)
+    {
+        $('#group-panel-door').show();
     }
 
     switch(ddCategory)
@@ -1143,8 +1154,15 @@ function loadTool(apiUrl) {
                     url: apiUrl + 'winkelwagen.php',
                     method: 'GET',
                     success: function(data){
-                        $('#cart').show().html('<p>' + data + '<p>');
-                        ScrollToTool('#scrollCartTarget');
+                        if($('#cart').length === 0)
+                        {
+                            location.href = "/bereken";
+                        }
+                        else
+                        {
+                            $('#cart').show().html('<p>' + data + '<p>');
+                            ScrollToTool('#scrollCartTarget');
+                        }
                     }
                 });
             }
