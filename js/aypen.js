@@ -1,3 +1,5 @@
+var toolIsloading = true;
+
 $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
     dataType: 'text',
     options.crossDomain ={
@@ -7,6 +9,22 @@ $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
         withCredentials: true
     };
 });
+function ScrollToTool(target)
+{
+    if(toolIsloading)
+    {
+        return;
+    }
+
+    if($(target).length == 0 || $(target).offset() === undefined  || $(target).offset().top === undefined)
+    {
+        return;
+    }
+
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 100);
+}
 
 function refreshCategory(category, nav)
 {
@@ -232,6 +250,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -245,6 +264,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -258,6 +278,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -271,6 +292,7 @@ function refreshColor()
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#colorOptions');
         }
     });
 
@@ -317,6 +339,7 @@ function refreshType()
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
             refreshOptions();
+            ScrollToTool('#group-profile');
         }
     });
 }
@@ -338,6 +361,7 @@ function refreshOptions() {
     $('#group-glas').hide();
     $('#group-slot').hide();
     $('#group-slot-beslag').hide();
+    $('#group-panel-door').hide();
     $('#group-shutter-engine').hide();
     $('#group-veranda-light').hide();
     $('#group-veranda-gutter').hide();
@@ -397,6 +421,11 @@ function refreshOptions() {
     if(false && product['keyPart'] > 0)
     {
         $('#group-slot').show();
+    }
+
+    if(product['paneldoor'] > 0)
+    {
+        $('#group-panel-door').show();
     }
 
     switch(ddCategory)
@@ -485,6 +514,7 @@ function loadTool(apiUrl) {
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#labelChooseFrameBuiten');
         }
     });
 
@@ -730,6 +760,7 @@ function loadTool(apiUrl) {
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#chooseProfile');
         }
     });
 
@@ -877,6 +908,7 @@ function loadTool(apiUrl) {
         imagePosition: "left",
         onSelected: function (selectedData) {
             $('#bereken-message').hide();
+            ScrollToTool('#chooseGlas');
         }
     });
 
@@ -1097,6 +1129,7 @@ function loadTool(apiUrl) {
 
             success: function(data){
                 $('#bereken-message').show().html('<p>' + data + '</p>');
+
             }
         });
 
@@ -1114,14 +1147,24 @@ function loadTool(apiUrl) {
             data: {'id': this.id},
             success: function(data){
 
-                if($('#toolComponent').val() === undefined)
-                {
-                    location.reload();
-                }
-                else
-                {
-                    location.href = '/bereken';
-                }
+                $.ajax({
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    url: apiUrl + 'winkelwagen.php',
+                    method: 'GET',
+                    success: function(data){
+                        if($('#cart').length === 0)
+                        {
+                            location.href = "/bereken";
+                        }
+                        else
+                        {
+                            $('#cart').show().html('<p>' + data + '<p>');
+                            ScrollToTool('#scrollCartTarget');
+                        }
+                    }
+                });
             }
         });
 
@@ -1170,5 +1213,9 @@ function loadTool(apiUrl) {
     });
 
     refreshOptions();
-    refreshCategory('window', '#nav_window')
+    refreshCategory('window', '#nav_window');
+
+    toolIsloading = false;
+
+
 };

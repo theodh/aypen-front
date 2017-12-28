@@ -5,7 +5,7 @@ mainImageUrl:
 mainImageHeight:
 mainImageWidth: 100%
 title: LED verlichting
-description: Uitleg over LED verlichting dit moment de meest energiezuinige verlichting
+description: Uitleg over LED verlichting energiezuinige verlichting die u voor uw woning. Aypen biedt kwalitatief hoogwaardige LED verlichting aan. Bezoek aan onze showroom en kies uw favoriete verlichting.
 keywords: LED verlichting
 author: Judy Heeres
 mainImageUrl:

@@ -5,6 +5,7 @@ mainImageUrl:
 mainImageHeight:
 mainImageWidth: 100%
 title: Installatiemateriaal
+foto sanitair.jpg
 description: Uitleg over Installatiemateriaal
 keywords: installatiemateriaal, intallatie, toilet, badkamer, CV-ketel
 author: Judy Heeres
