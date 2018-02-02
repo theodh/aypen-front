@@ -1,0 +1,39 @@
+---
+hide_body: false
+fields:
+- type: text
+  label: title
+  name: title
+  config:
+    required: true
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - page-menu-left
+    - page
+    required: true
+  label: layout
+  name: layout
+  default: page-menu-left
+- type: text
+  name: keywords
+  label: keywords
+  config:
+    required: true
+- type: text
+  name: authorauthor
+  label: author
+- type: file
+  name: mainimageurl
+  label: Main Image
+  config:
+    maxSize: '3'
+- type: text
+  name: mainimagewidth
+  label: mainImageWidth
+  default: 100%
+- type: text
+  name: mainimageheight
+  label: mainImageHeight
