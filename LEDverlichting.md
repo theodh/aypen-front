@@ -1,17 +1,17 @@
 ---
+title: LED verlichting
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl:
-mainImageHeight:
+mainImageUrl: 
+mainImageHeight: 
 mainImageWidth: 100%
-title: LED verlichting
-description: Uitleg over LED verlichting energiezuinige verlichting die u voor uw woning. Aypen biedt kwalitatief hoogwaardige LED verlichting aan. Bezoek aan onze showroom en kies uw favoriete verlichting.
+description: Uitleg over LED verlichting energiezuinige verlichting die u voor uw
+  woning. Aypen biedt kwalitatief hoogwaardige LED verlichting aan. Bezoek aan onze
+  showroom en kies uw favoriete verlichting.
 keywords: LED verlichting
 author: Judy Heeres
-mainImageUrl:
-mainImageHeight:
-mainImageWidth: 100%
 ---
+
 LED verlichting is op dit moment de meest energiezuinige verlichting die u voor uw woning kunt aanschaffen. 
 Vindt u het belangrijk om niet te veel geld uit te geven aan het energieverbruik van uw woning, 
 dan kunt u LED verlichting van Aypen aanschaffen om de kosten van uw energieverbruik te drukken.

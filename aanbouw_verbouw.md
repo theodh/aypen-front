@@ -1,10 +1,11 @@
 ---
-layout: page
 title: Aanbouw, Verbouw & Renovatie
+layout: page
 description: Uitleg over aanbouw, verbouw en renovatie
 keywords: verbouw, verbouwing, renovatie, renoveren, woningaanpassing, aanbouw
 author: Judy Heeres
 ---
+
 <article class="blog full">
     <div class="image">
         <img src="/img/verbouw.jpg" alt="Header aypen">

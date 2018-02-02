@@ -1,17 +1,15 @@
 ---
+title: Tegels
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: /img/tegels.jpg
-mainImageHeight:
+mainImageUrl: 
+mainImageHeight: 
 mainImageWidth: 100%
-title: Tegels
 description: Uitleg over Tegels
 keywords: tegels, keramisch, tegelwerk, badkamer, woning, vloer, wand
 author: Judy Heeres
-mainImageUrl:
-mainImageHeight:
-mainImageWidth: 100%
 ---
+
 Bent u op zoek naar keramische tegels voor de badkamer van uw woning? Als u uw keramische tegelwerk
 aanschaft bij Aypen weet u zeker dat u de beste kwaliteit in huis haalt en vele jaren plezier kunt 
 hebben van uw aankoop.

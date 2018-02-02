@@ -1,10 +1,11 @@
 ---
-layout: full-page
 title: Welkom
+layout: full-page
 description: De brochure van panel deuren van het merk Rofex
 keywords: keyword1
 author: Theo den Hollander
 ---
+
 <div>
     <style>
         .pdfobject-container { height: 800px;}
