@@ -2,8 +2,8 @@
 title: Tegels
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Tegels
 keywords: tegels, keramisch, tegelwerk, badkamer, woning, vloer, wand

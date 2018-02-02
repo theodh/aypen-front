@@ -4,8 +4,8 @@ layout: page
 description: Uitleg over de Showroom
 keywords: kozijnen
 author: Judy Heeres
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 ---
 

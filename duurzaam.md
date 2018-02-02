@@ -4,8 +4,8 @@ layout: page
 description: Uitleg over duurzaamheid
 keywords: duurzaam, duurzaamheid
 author: Judy Heeres
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 ---
 

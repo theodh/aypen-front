@@ -1,8 +1,8 @@
 ---
 title: Aanbouw, Verbouw & Renovatie
 layout: page
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over aanbouw, verbouw en renovatie
 keywords: verbouw, verbouwing, renovatie, renoveren, woningaanpassing, aanbouw

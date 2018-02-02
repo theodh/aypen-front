@@ -7,7 +7,7 @@ keywords: kozijnen
 author: Judy Heeres
 aypentool: window
 mainImageUrl: "/img/kozijnen.jpg"
-mainImageHeight: ""
+mainImageHeight: ''
 mainImageWidth: 100%
 ---
 

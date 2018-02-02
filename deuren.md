@@ -2,8 +2,8 @@
 title: Deuren
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 aypentool: door
 Title3: header_1.jpg
