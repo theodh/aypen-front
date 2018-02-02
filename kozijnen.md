@@ -1,15 +1,16 @@
 ---
+title: Kozijnen
 layout: page-menu-left
 menu-left: menu-aanbod.html
-title: Kozijnen
 description: Uitleg over kozijnen
 keywords: kozijnen
 author: Judy Heeres
 aypentool: window
-mainImageUrl: /img/kozijnen.jpg
-mainImageHeight:
+mainImageUrl: "/img/kozijnen.jpg"
+mainImageHeight: 
 mainImageWidth: 100%
 ---
+
 Aypen levert kunststof kozijnen die voldoen aan de moderne technieken met de uitstraling die past bij uw huis. Kiest u voor kunststof kozijnen dan kiest u voor onderhoudsarme, energiebesparende, geluidswerende, inbraakwerende, duurzame en milieuvriendelijke kozijnen.  
   _**Onderhoudsarm:**_ nooit meer verven of lakken; minder beschadigingen en minder aantrek van vuil, zorgen ervoor dat afnemen met een vochtige doek voldoende is!  
   _**Energiebesparend:**_ met de isolerende kozijnen en glazen bespaart u aanzienlijk op uw stook- en koelingskosten.  

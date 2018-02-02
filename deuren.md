@@ -1,16 +1,17 @@
 ---
+title: Deuren
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl:
-mainImageHeight:
+mainImageUrl: 
+mainImageHeight: 
 mainImageWidth: 100%
 aypentool: door
-title: Deuren
 Title3: header_1.jpg
 description: Uitleg over deuren
 keywords: deuren
 author: Judy Heeres
 ---
+
 <article class="blog full">
     <div class="image">
         <img src="/img/deur.jpg" alt="Header aypen">

@@ -1,17 +1,16 @@
 ---
+title: Vloerverwarming
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl:
-mainImageHeight:
+mainImageUrl: 
+mainImageHeight: 
 mainImageWidth: 100%
-title: Vloerverwarming
 description: Uitleg over Vloerverwarming
-keywords: vloerverwarming, koude voeten, elektrische verwarmingselementen, frezen, vloer, verwarmen
+keywords: vloerverwarming, koude voeten, elektrische verwarmingselementen, frezen,
+  vloer, verwarmen
 author: Judy Heeres
-mainImageUrl:
-mainImageHeight:
-mainImageWidth: 100%
 ---
+
 Heeft u regelmatig last van koude voeten en bent u op zoek naar een oplossing om dit probleem op te lossen? 
 Bekijk dan eens de mogelijkheden van de vloerverwarming van Aypen. Met deze verwarming voor uw vloeren heeft 
 u namelijk nooit meer last van koude voeten, maar kunt u indien gewenst een heerlijke warme gloed uit 

@@ -1,10 +1,11 @@
 ---
-layout: page
 title: Schoonheid
+layout: page
 description: Uitleg over schoonheid
 keywords: schoonheid
 author: Judy Heeres
 ---
+
 <article class="blog full">
     <div class="image">
         <img src="/img/zonwering.jpg" alt="Header aypen">
