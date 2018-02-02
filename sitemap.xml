@@ -1,15 +1,161 @@
----
-layout: null
-sitemap: false
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    {% for page in site.pages %}
-    {% if page.sitemap != false %}
-    <url><loc>{{ site.url | replace: 'http', 'https'}}{{ page.url | replace: '.html', '' }}</loc></url>
-    {% endif %}
-    {% endfor %}
+    
+    
+    
+    
+    <url><loc>https://www.aypen.nl/LEDverlichting</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/aanbod</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/aanbouw</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/aanbouw_verbouw</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/badkamers</loc></url>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <url><loc>https://www.aypen.nl/bereken</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/brochure_deuren_rofex</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/config-forestryio.yml</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/contact</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/contact2</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/dakkapellen</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/deuren</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/duurzaam</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/feed.xml</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/zonwering/</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/installatiemateriaal</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/kozijnen</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/kwaliteit</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/css/main.css</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/zonwering/markiezen</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/ontwerp</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/referenties</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/robots.txt</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/zonwering/rolluiken</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/sanitair</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/schoonheid</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/schuifpuien</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/zonwering/screens</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/serre</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/showroom</loc></url>
+    
+    
+    
+    
+    
+    <url><loc>https://www.aypen.nl/tegels</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/zonwering/terrasschermen</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/veranda</loc></url>
+    
+    
+    
+    <url><loc>https://www.aypen.nl/vloerverwarming</loc></url>
+    
+    
 </urlset>

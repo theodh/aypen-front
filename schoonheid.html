@@ -3,16 +3,16 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
-    <meta name="description" content="contact opnemen met Aypen">
+    <title>Schoonheid</title>
+    <meta name="description" content="Uitleg over schoonheid">
     
-    <meta name="keywords" content="contact opnemen">
+    <meta name="keywords" content="schoonheid">
     
     
-    <meta name="author" content="Theo den Hollander">
+    <meta name="author" content="Judy Heeres">
     
 
-    <link rel="canonical" href="http://www.aypen.nl/contact2.html">
+    <link rel="canonical" href="http://www.aypen.nl/schoonheid.html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
 
@@ -153,56 +153,23 @@
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 blog-content pull-left">
                 
 
-                    <h2>Contact</h2>
+                    <h2>Schoonheid</h2>
                     <p>
-                        <div class="row">
-    <div class="main-column col-12">
-        
-
-        <div class="inner">
-            <div>
-                <div class="col-12">
-                    <h3>Contact</h3>
-                    <p>Heeft u vragen, opmerkingen of wilt u een offerte aanvragen, neem dan contact op via onderstaand formulier.</p>
-                     <hr>
-                    <form id="contact-form" action="https://dyn.aypen.nl/send.php" method="post">
-                        <div class="form-group">
-                            <label for="firstname">Voornaam <span class="form-required" title="This field is required.">*</span></label>
-                            <input type="text" name="firstname" class="form-control half" id="firstname" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastname">Achternaam <span class="form-required" title="This field is required.">*</span></label>
-                            <input type="text" name="lastname" class="form-control half" id="lastname" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail <span class="form-required" title="This field is required.">*</span></label>
-                            <input type="email" name="email" class="form-control half" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Onderwerp</label>
-                            <input type="text" name="subject" class="form-control half" id="subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Bericht <span class="form-required" title="This field is required.">*</span></label>
-                            <textarea name="message" class="form-control" rows="4" id="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Verstuur</button>
-
-
-
-                    </form>
-                </div>
-               
-            </div>
-
-            <div class="row">
-                <div id="contact-message">
-                    &nbsp;
-                </div>
-            </div>
-        </div>
+                        <article class="blog full">
+    <div class="image">
+        <img src="/img/zonwering.jpg" alt="Header aypen" />
     </div>
-</div>
+    <!-- Inner -->
+    <div class="inner">
+        <header>
+            <h1>Schoonheid</h1>
+          
+        </header>
+<p>Naast kwalitatief hoogwaardige en duurzame producten, vinden wij het belangrijk dat de verandering aan uw huis er mooi uitziet. Wij luisteren daarom naar uw wensen en zoeken naar een passende oplossing, waarbij wij uiteraard speciale aandacht besteden aan de bestaande karakteristieken.</p>
+
+        
+        </div>
+</article>
 
                     </p>
                     <br>
@@ -380,25 +347,6 @@
 <script src="/js/jquery.ddslick.min.js"></script> <!-- Custom JS -->
 
 
-
-<script type="application/javascript">
-    $("#contact-form").submit(function(e){
-        $.ajax({
-            xhrFields: {
-                withCredentials: true
-            },
-            url: aypenApiUrl + 'send.php',
-            method: 'POST',
-            data: $('#contact-form').serialize(),
-
-            success: function(data){
-                $('#contact-message').show().html('<p>' + data + '</p>');
-            }
-        });
-
-        return false;
-    });
-</script>
 
 
   </body>
