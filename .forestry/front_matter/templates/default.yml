@@ -25,17 +25,17 @@ fields:
   config:
     required: true
 - type: text
-  name: authorauthor
+  name: author
   label: author
 - type: file
-  name: mainimageurl
-  label: Main Image
+  name: mainImageUrl
+  label: mainImageUrl
   config:
     maxSize: '3'
 - type: text
-  name: mainimagewidth
+  name: mainImageWidth
   label: mainImageWidth
   default: 100%
 - type: text
-  name: mainimageheight
+  name: mainImageHeight
   label: mainImageHeight
