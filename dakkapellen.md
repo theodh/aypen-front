@@ -3,7 +3,7 @@ title: Dakkapellen
 layout: page-menu-left
 menu-left: menu-aanbod.html
 mainImageUrl: "/img/referenties/dakkapel3.jpg"
-mainImageHeight: 
+mainImageHeight: ""
 mainImageWidth: 100%
 description: Uitleg over dakkapellen
 keywords: dakkapellen

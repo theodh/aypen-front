@@ -5,7 +5,7 @@ description: Uitleg over kwaliteit
 keywords: kwaliteit
 author: Judy Heeres
 mainImageUrl: "/img/kozijnen.jpg"
-mainImageHeight: 
+mainImageHeight: ""
 mainImageWidth: 100%
 ---
 

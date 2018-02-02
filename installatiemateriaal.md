@@ -1,4 +1,14 @@
 ---
+title: Installatiemateriaal
+layout: page-menu-left
+menu-left: menu-aanbod.html
+description: Uitleg over installatiemateriaal
+keywords: kozijnen
+author: Esther Atas
+aypentool: window
+mainImageUrl: ""
+mainImageHeight:
+mainImageWidth: 100%
 ---
 
 Als u geld investeert in een nieuw toilet, een nieuwe badkamer of een nieuwe CV-ketel, wilt u natuurlijk wel dat uw aankoop op de juiste manier geïnstalleerd wordt. Aypen helpt u graag om uw aankopen op de juiste manier te installeren door middel van professionele installatie met het beste installatiemateriaal. Zo kan Aypen u van dienst zijn bij het installeren van een toilet of CV-ketel, maar ook bij het installeren van een volledige badkamer.

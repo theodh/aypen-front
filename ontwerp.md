@@ -3,7 +3,7 @@ title: Advies & Ontwerp
 layout: page-menu-left
 menu-left: menu-aanbod.html
 mainImageUrl: "/img/ontwerp-proces-architectuur.jpg"
-mainImageHeight: 
+mainImageHeight: ""
 mainImageWidth: 100%
 description: Uitleg advies en ontwerp
 keywords: advies, ontwerp, bouw, nieuwbouw, aanbouw, verbouw, renovatie, bouwadvies,

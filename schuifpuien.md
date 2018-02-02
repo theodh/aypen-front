@@ -2,8 +2,8 @@
 title: Schuifpuien
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: 
-mainImageHeight: 
+mainImageUrl: ""
+mainImageHeight: ""
 mainImageWidth: 100%
 aypentool: slidingdoor
 description: Uitleg over schuifpuien

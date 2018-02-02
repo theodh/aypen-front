@@ -2,7 +2,7 @@
 title: Aanbouw
 menu-left: menu-aanbod.html
 mainImageUrl: "/img/aanbouw.jpg"
-mainImageHeight: 
+mainImageHeight: ""
 mainImageWidth: 100%
 description: Uitleg over aanbouw
 keywords: aanbouw

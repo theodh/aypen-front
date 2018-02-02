@@ -2,8 +2,8 @@
 title: Sanitair
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: 
-mainImageHeight: 
+mainImageUrl: ""
+mainImageHeight: ""
 mainImageWidth: 100%
 description: Uitleg over Sanitair
 keywords: Sanitair, douche, badkamer, bad, toilet, wastafel, badmeubels, kranen, verwarming,

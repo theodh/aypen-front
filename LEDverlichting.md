@@ -2,8 +2,8 @@
 title: LED verlichting
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: 
-mainImageHeight: 
+mainImageUrl: ""
+mainImageHeight: ""
 mainImageWidth: 100%
 description: Uitleg over LED verlichting energiezuinige verlichting die u voor uw
   woning. Aypen biedt kwalitatief hoogwaardige LED verlichting aan. Bezoek aan onze
