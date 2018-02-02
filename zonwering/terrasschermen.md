@@ -3,7 +3,7 @@ title: Terrasschermen
 layout: page-menu-left
 menu-left: menu-zonwering.html
 mainImageUrl: "/img/terrasschermen.jpg"
-mainImageHeight: 
+mainImageHeight: ""
 mainImageWidth: 100%
 description: Uitleg over terrasschermen
 keywords: terrasschermen
