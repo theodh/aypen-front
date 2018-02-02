@@ -3,7 +3,7 @@ title: Serres
 layout: page-menu-left
 menu-left: menu-aanbod.html
 mainImageUrl: "/img/serre.jpg"
-mainImageHeight: ""
+mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over serres
 keywords: serre, tuinkamer

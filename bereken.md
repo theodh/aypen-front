@@ -5,8 +5,8 @@ keywords: bereken tool
 author: Theo den Hollander
 aypentool: all
 sideInfo: "<span id='cart'></span>"
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 ---
 

@@ -6,8 +6,8 @@ description: Uitleg over installatiemateriaal
 keywords: kozijnen
 author: Esther Atas
 aypentool: window
-mainImageUrl: ""
-mainImageHeight:
+mainImageUrl: ''
+mainImageHeight: 
 mainImageWidth: 100%
 ---
 

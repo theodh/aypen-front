@@ -4,8 +4,8 @@ layout: page
 description: Uitleg over schoonheid
 keywords: schoonheid
 author: Judy Heeres
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 ---
 

@@ -3,7 +3,7 @@ title: Veranda's
 layout: page-menu-left
 menu-left: menu-aanbod.html
 mainImageUrl: "/tool/info/img/V905-Iseo-8.jpg"
-mainImageHeight: ""
+mainImageHeight: ''
 mainImageWidth: 100%
 aypentool: veranda
 description: Uitleg over veranda's & serres

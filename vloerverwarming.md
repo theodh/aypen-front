@@ -2,8 +2,8 @@
 title: Vloerverwarming
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: ""
-mainImageHeight: ""
+mainImageUrl: ''
+mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Vloerverwarming
 keywords: vloerverwarming, koude voeten, elektrische verwarmingselementen, frezen,
