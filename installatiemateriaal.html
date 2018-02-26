@@ -173,10 +173,6 @@
                     <br>
 
                     
-<div id="toolLoader"></div>
-<div id="toolInfo"></div>
-<input id="toolComponent" type="hidden" value="window">
-
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-push-0 col-md-push-0 col-sm-push-3 col-xs-push-0 sidebar blog-right right">
@@ -373,43 +369,6 @@
 </script>
 <script src="/js/custom.js"></script> <!-- Custom JS -->
 <script src="/js/jquery.ddslick.min.js"></script> <!-- Custom JS -->
-
-<script type='text/javascript' src="https://dyn.aypen.nl/productInfo.php"></script>
-<script type='text/javascript' src="/js/aypen.js"></script> <!-- MixIt UP JS -->
-<script type="application/javascript">
-    loadToolComponent = '';
-
-    if($('#toolLoader').length > 0)
-    {
-        if($('#toolComponent').val() !== undefined)
-        {
-            loadToolComponent = '?toolComponent=' + $('#toolComponent').val();
-
-            $.ajax({
-                url: "/tool/info/bereken-info-" + $('#toolComponent').val(),
-                xhrFields: {
-                    withCredentials: true
-                },
-                success: function(data) {
-                    $( "#toolInfo" ).html( data );
-                }
-            });
-
-        }
-
-        $.ajax({
-            url: "https://dyn.aypen.nl//tool/views/bereken.php" + loadToolComponent,
-            xhrFields: {
-                withCredentials: true
-            },
-            success: function(data) {
-                $( "#toolLoader" ).html( data );
-            }
-        });
-    }
-
-
-</script>
 
 
 
