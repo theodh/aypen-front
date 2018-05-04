@@ -1,26 +1,11 @@
 ---
 title: Schoonheid
-layout: page
+layout: page-menu-left
 description: Uitleg over schoonheid
 keywords: schoonheid
 author: Judy Heeres
-mainImageUrl: ''
+mainImageUrl: "/uploads/2018/05/04/kozijnen.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 ---
-<article class="blog full">
-<div class="image">
-<img src="/img/zonwering.jpg" alt="Header aypen">
-</div>
-<!-- Inner -->
-<div class="inner">
-<header>
-<h1>Schoonheid</h1>
-
-        </header>
-
-<p>Naast kwalitatief hoogwaardige en duurzame producten, vinden wij het belangrijk dat de verandering aan uw huis er mooi uitziet! Wij luisteren daarom naar uw wensen en zoeken naar een passende oplossing, waarbij wij uiteraard speciale aandacht besteden aan de bestaande karakteristieken.</p>
-
-        </div>
-
-</article>
+Naast kwalitatief hoogwaardige en duurzame producten, vinden wij het belangrijk dat de verandering aan uw huis er mooi uitziet! Wij luisteren daarom naar uw wensen en zoeken naar een passende oplossing, waarbij wij uiteraard speciale aandacht besteden aan de bestaande karakteristieken.
