@@ -5,7 +5,7 @@ menu-left: menu-aanbod.html
 mainImageUrl: ''
 mainImageHeight: ''
 mainImageWidth: 100%
-aypentool: door
+aypentool: ''
 Title3: header_1.jpg
 description: Uitleg over deuren
 keywords: deuren
