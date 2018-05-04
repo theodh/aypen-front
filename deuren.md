@@ -2,7 +2,7 @@
 title: Deuren
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: '/img/deur.jpg'
+mainImageUrl: "/img/deur.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over deuren
