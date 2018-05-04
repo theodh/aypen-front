@@ -4,7 +4,7 @@ layout: page-menu-left
 description: Uitleg over schoonheid
 keywords: schoonheid
 author: Judy Heeres
-mainImageUrl: "/uploads/2018/05/04/kozijnen.jpg"
+mainImageUrl: "/img/content/badkamer.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 ---
