@@ -4,7 +4,7 @@ layout: page
 description: Uitleg over deuren
 keywords: deuren
 author: Judy Heeres
-mainImageUrl: '/img/deur.jpg'
+mainImageUrl: "/img/deur.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 ---
