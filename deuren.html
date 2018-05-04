@@ -155,7 +155,7 @@
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 blog-content pull-left">
                 
                 <div class="img-holder">
-                    <img src="/img/deur.jpg" alt="Deuren" height=""
+                    <img src="" alt="Deuren" height=""
                          width="100%">
                     
                 </div>
@@ -163,9 +163,21 @@
 
                     <h2>Deuren</h2>
                     <p>
-                        <p>Aan voor- en achterdeuren worden hoge eisen gesteld. Enerzijds is een stevige en solide uitvoering noodzakelijk in verband met veelvuldig gebruik. Anderzijds hecht men veel waarde aan vorm, uitstraling en design.</p>
+                        <article class="blog full">
+<div class="image">
+<img src="/img/deur.jpg" alt="Header aypen" />
+</div>
+<!-- Inner -->
+<div class="inner">
+<header>
+<h1>Deuren</h1>
 
-<p>Een deur bepaalt tenslotte voor een belangrijk deel de uitstraling van uw woning. Wij leveren diverse modellen, die te combineren zijn met diverse soorten glas, grepen, etcetera.</p>
+        </header>
+        <p>Aan voor- en achterdeuren worden hoge eisen gesteld. Enerzijds is een stevige en solide uitvoering noodzakelijk in verband met veelvuldig gebruik. Anderzijds hecht men veel waarde aan vorm, uitstraling en design. 
+        Een deur bepaalt tenslotte voor een belangrijk deel de uitstraling van uw woning. Wij leveren diverse modellen, die te combineren zijn met diverse soorten glas, grepen, etcetera.</p>
+    </div>
+
+</article>
 
 <p>Klik <a target="_blank" href="https://app.traumtuer-konfigurator.de/?color=b9e2f8&amp;conf=daf957de&amp;lang=en&amp;logo=03fdee1b-9e12-4202-a8ff-2a52f3b2e03e&amp;request=true&amp;to=info%40aypenkozijnen.nl">hier</a> om uw deur uit te kiezen.</p>
 
@@ -173,6 +185,10 @@
                     <br>
 
                     
+<div id="toolLoader"></div>
+<div id="toolInfo"></div>
+<input id="toolComponent" type="hidden" value="">
+
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-push-0 col-md-push-0 col-sm-push-3 col-xs-push-0 sidebar blog-right right">
@@ -369,6 +385,43 @@
 </script>
 <script src="/js/custom.js"></script> <!-- Custom JS -->
 <script src="/js/jquery.ddslick.min.js"></script> <!-- Custom JS -->
+
+<script type='text/javascript' src="https://dyn.aypen.nl/productInfo.php"></script>
+<script type='text/javascript' src="/js/aypen.js"></script> <!-- MixIt UP JS -->
+<script type="application/javascript">
+    loadToolComponent = '';
+
+    if($('#toolLoader').length > 0)
+    {
+        if($('#toolComponent').val() !== undefined)
+        {
+            loadToolComponent = '?toolComponent=' + $('#toolComponent').val();
+
+            $.ajax({
+                url: "/tool/info/bereken-info-" + $('#toolComponent').val(),
+                xhrFields: {
+                    withCredentials: true
+                },
+                success: function(data) {
+                    $( "#toolInfo" ).html( data );
+                }
+            });
+
+        }
+
+        $.ajax({
+            url: "https://dyn.aypen.nl//tool/views/bereken.php" + loadToolComponent,
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function(data) {
+                $( "#toolLoader" ).html( data );
+            }
+        });
+    }
+
+
+</script>
 
 
 
