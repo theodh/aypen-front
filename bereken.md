@@ -17,7 +17,4 @@ Hieronder kunt u een prijsindicatie berekenen voor kozijnen, schuifpuien, rollui
 <br/>
 
 <img width="300px" src='https://dyn.aypen.nl/tool/img/bereken-tool-binnnekort-beschikbaar.png' />
-<script>
 
-$('#nav_door').hide();
-</script>
