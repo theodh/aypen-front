@@ -1,7 +1,4 @@
 ---
-pages:
-- test7.md
-- test5.md
 hide_body: false
 is_partial: false
 fields:
@@ -41,3 +38,7 @@ fields:
 - type: text
   name: mainImageHeight
   label: mainImageHeight
+pages:
+- test7.md
+- test5.md
+- _uploads/tegels.md
