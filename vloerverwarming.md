@@ -2,7 +2,7 @@
 title: Vloerverwarming
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: ''
+mainImageUrl: "/img/content/vloerverwaring website.JPG"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Vloerverwarming
