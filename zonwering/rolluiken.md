@@ -2,7 +2,7 @@
 title: Rolluiken
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: "/tool/info/img/Rolluiken-4.jpg"
+mainImageUrl: "/img/content/rolluiken website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 aypentool: shutter
