@@ -2,7 +2,7 @@
 title: Markiezen
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: "/img/markiezen.jpg"
+mainImageUrl: "/img/content/markiezen voor website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over markiezen
