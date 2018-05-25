@@ -5,7 +5,7 @@ menu-left: menu-aanbod.html
 description: Uitleg over installatiemateriaal
 keywords: kozijnen
 author: Esther Atas
-mainImageUrl: "/img/content/installatiemateriaal 4.jpeg"
+mainImageUrl: "/img/content/installatiemateriaal website 2.jpg"
 mainImageHeight: 
 mainImageWidth: 100%
 ---
