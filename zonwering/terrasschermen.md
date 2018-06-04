@@ -2,7 +2,7 @@
 title: Terrasschermen
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: "/img/terrasschermen.jpg"
+mainImageUrl: "/img/content/zonnescherm verano website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over terrasschermen
