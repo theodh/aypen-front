@@ -2,7 +2,7 @@
 title: Veranda's
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/tool/info/img/V905-Iseo-8.jpg"
+mainImageUrl: "/img/content/terrasoverkapping verano website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 aypentool: veranda
