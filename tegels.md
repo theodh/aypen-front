@@ -2,7 +2,7 @@
 title: Tegels
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/tegels 1 website.jpg"
+mainImageUrl: "/img/content/tegels 1.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Tegels
