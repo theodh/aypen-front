@@ -39,6 +39,6 @@ fields:
   name: mainImageHeight
   label: mainImageHeight
 pages:
-- test7.md
 - test5.md
+- test7.md
 - _uploads/tegels.md
