@@ -2,7 +2,7 @@
 title: Screens
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: "/img/screens.jpg"
+mainImageUrl: "/img/content/screen 3 website.jpg"
 mainImageHeight: 300px
 mainImageWidth: 217px
 description: Uitleg over screens
