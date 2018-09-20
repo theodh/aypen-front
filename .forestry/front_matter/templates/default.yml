@@ -40,6 +40,7 @@ fields:
   name: mainImageHeight
   label: mainImageHeight
 pages:
+- vloerverwarming.md
 - LEDverlichting.md
 - kwaliteit.md
 - dakkapellen.md
