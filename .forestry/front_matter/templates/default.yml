@@ -40,6 +40,7 @@ fields:
   name: mainImageHeight
   label: mainImageHeight
 pages:
+- schoonheid.md
 - contact.html
 - veranda.md
 - contact2.html
