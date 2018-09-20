@@ -8,6 +8,7 @@ mainImageWidth: 100%
 description: Uitleg over aanbouw, verbouw en renovatie
 keywords: verbouw, verbouwing, renovatie, renoveren, woningaanpassing, aanbouw
 author: Judy Heeres
+
 ---
 ## Aanbouw  
 Wilt u een ruimer huis zonder te verhuizen? Bijvoorbeeld een erker of extra kamer? Of u nou een volledig plan heeft of niet weet hoe u deze extra ruimte kunt creëeren, bij Aypen bent u aan het goede adres. Door onze jarenlange ervaring, van kleine klus tot aannemerswerk, hebben wij creatieve oplossingen voor al uw wensen.  
