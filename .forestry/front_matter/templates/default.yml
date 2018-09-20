@@ -40,6 +40,7 @@ fields:
   name: mainImageHeight
   label: mainImageHeight
 pages:
+- badkamers.md
 - tegels.md
 - duurzaam.md
 - kozijnen.md
