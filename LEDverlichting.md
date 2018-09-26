@@ -22,4 +22,4 @@ helemaal niet duur hoeven te zijn, zodat meer mensen kunnen profiteren van de ve
 hoogwaardige producten in hun woning. Om ervoor te zorgen dat iedereen bij Aypen kan slagen bij het aanschaffen
 van verlichting, verkopen wij onze diverse producten dan ook altijd voor een aantrekkelijke prijs.
 
-Bent u ook op zoek naar goede verlichting voor een aantrekkelijke prijs? Bekijk dan de diverse producten in ons aanbod tijdens een bezoek aan onze showroom en kies uw favoriete verlichting uit een groot aanbod van diverse soorten en merken..
+Bent u ook op zoek naar goede verlichting voor een aantrekkelijke prijs? Bekijk dan de diverse producten in ons aanbod tijdens een bezoek aan onze showroom en kies uw favoriete verlichting uit een groot aanbod van diverse soorten en merken.
