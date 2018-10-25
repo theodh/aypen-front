@@ -11,4 +11,4 @@ mainImageHeight: ''
 ---
 Welkom bij AYPEN badkamers
 
-Wil je een badkamer die betaalbaar is en design dan moet je bij Aypen zijn.
+Wil je een badkamer die betaalbaar is en design dan moet je bij Aypen zijn..
