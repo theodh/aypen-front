@@ -21,7 +21,9 @@ mainImageWidth: 100%
                     <h3>Contact</h3>
                     <p>Heeft u vragen, opmerkingen of wilt u een offerte aanvragen, neem dan contact op via onderstaand formulier.</p>
                      <hr>
+                  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     <form id="contact-form" action="{{ site.aypentool }}send.php" method="post">
+                      
                         <div class="form-group">
                             <label for="firstname">Voornaam <span class="form-required" title="This field is required.">*</span></label>
                             <input type="text" name="firstname" class="form-control half" id="firstname" required>
@@ -42,6 +44,9 @@ mainImageWidth: 100%
                             <label for="message">Bericht <span class="form-required" title="This field is required.">*</span></label>
                             <textarea name="message" class="form-control" rows="4" id="message" required></textarea>
                         </div>
+                      
+                      <div class="g-recaptcha" data-sitekey="6LfiNJAUAAAAADVSH09MDCDLWhVb7r1OiJEOIi6I"></div>
+      <br/>
                         <button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Verstuur</button>
 
 
