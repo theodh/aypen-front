@@ -8,6 +8,7 @@ mainImageWidth: 100%
 description: Uitleg over aanbouw, verbouw en renovatie
 keywords: verbouw, verbouwing, renovatie, renoveren, woningaanpassing, aanbouw
 author: Judy Heeres
+pinterest_url: https://nl.pinterest.com/aypenbv/voor-en-na-de-verbouwing/
 
 ---
 ## Aanbouw  
