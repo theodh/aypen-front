@@ -1,7 +1,6 @@
 ---
 label: default
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: title
@@ -40,23 +39,23 @@ fields:
   name: mainImageHeight
   label: mainImageHeight
 pages:
-- aanbouw_verbouw.md
-- veranda.md
-- _uploads/tegels.md
-- vloerverwarming.md
-- showroom.md
-- kwaliteit.md
-- schoonheid.md
-- deuren.md
-- badkamers.md
-- test7.md
-- duurzaam.md
-- aanbod.html
-- kozijnen.md
-- tegels.md
-- schuifpuien.md
-- contact2.html
-- sanitair.md
-- dakkapellen.md
-- LEDverlichting.md
 - serre.md
+- LEDverlichting.md
+- vloerverwarming.md
+- kwaliteit.md
+- dakkapellen.md
+- showroom.md
+- deuren.md
+- sanitair.md
+- schoonheid.md
+- veranda.md
+- contact2.html
+- schuifpuien.md
+- aanbod.html
+- badkamers.md
+- tegels.md
+- duurzaam.md
+- kozijnen.md
+- aanbouw_verbouw.md
+- _uploads/tegels.md
+- test7.md
