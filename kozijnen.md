@@ -25,6 +25,4 @@ Wilt u direct zien hoeveel nieuwe kozijnen u zullen gaan kosten, maak dan gebrui
 
 Voor een uitgebreid advies staan wij u graag persoonlijk te woord in onze showroom...
 
-    <a data-pin-do="embedBoard" data-pin-lang="nl" data-pin-board-width="940" data-pin-scale-height="600" data-pin-scale-width="80" href="https://nl.pinterest.com/aypenbv/kozijnen/"></a>
-
     
