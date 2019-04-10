@@ -1,6 +1,6 @@
 ---
 title: Deuren
-layout: page
+layout: page-menu-left
 description: Uitleg over deuren
 keywords: deuren
 author: Judy Heeres
