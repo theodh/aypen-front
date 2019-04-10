@@ -8,6 +8,7 @@ mainImageWidth: 100%
 description: Uitleg over Tegels
 keywords: tegels, keramisch, tegelwerk, badkamer, woning, vloer, wand
 author: Judy Heeres
+pinterest_url: https://nl.pinterest.com/aypenbv/wand-en-vloertegels/
 
 ---
 Bent u op zoek naar keramische tegels voor de badkamer van uw woning? Als u uw keramische tegelwerk
