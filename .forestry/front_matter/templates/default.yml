@@ -42,6 +42,7 @@ fields:
   name: pinterest_url
   label: Pinterest url
 pages:
+- zonwering/index.html
 - deuren.md
 - tegels.md
 - kozijnen.md
