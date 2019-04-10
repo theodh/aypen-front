@@ -38,6 +38,9 @@ fields:
 - type: text
   name: mainImageHeight
   label: mainImageHeight
+- type: text
+  name: pinterest_url
+  label: Pinterest url
 pages:
 - kozijnen.md
 - serre.md
