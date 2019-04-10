@@ -23,3 +23,5 @@ Wij leveren kunststof kozijnen in alle soorten en maten. Zo heeft u onder andere
 Wilt u direct zien hoeveel nieuwe kozijnen u zullen gaan kosten, maak dan gebruik van onderstaande berekenhulp. De hieruit voortkomende resultaten kunt u eenvoudig naar ons versturen. Wij nemen dan zo snel mogelijk contact met u op om u verder te informeren over de levering en/of plaatsing.
 
 Voor een uitgebreid advies staan wij u graag persoonlijk te woord in onze showroom...
+
+<a data-pin-do="embedBoard" data-pin-lang="nl" data-pin-board-width="940" data-pin-scale-height="600" data-pin-scale-width="80" href="[https://nl.pinterest.com/aypenbv/kozijnen/](https://nl.pinterest.com/aypenbv/kozijnen/ "https://nl.pinterest.com/aypenbv/kozijnen/")"></a>

@@ -39,6 +39,7 @@ fields:
   name: mainImageHeight
   label: mainImageHeight
 pages:
+- kozijnen.md
 - serre.md
 - LEDverlichting.md
 - vloerverwarming.md
@@ -55,7 +56,6 @@ pages:
 - badkamers.md
 - tegels.md
 - duurzaam.md
-- kozijnen.md
 - aanbouw_verbouw.md
 - _uploads/tegels.md
 - test7.md
