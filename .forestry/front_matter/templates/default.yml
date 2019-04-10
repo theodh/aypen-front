@@ -42,6 +42,7 @@ fields:
   name: pinterest_url
   label: Pinterest url
 pages:
+- deuren.md
 - tegels.md
 - kozijnen.md
 - serre.md
@@ -50,7 +51,6 @@ pages:
 - kwaliteit.md
 - dakkapellen.md
 - showroom.md
-- deuren.md
 - sanitair.md
 - schoonheid.md
 - veranda.md

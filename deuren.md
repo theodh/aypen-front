@@ -7,6 +7,7 @@ author: Judy Heeres
 mainImageUrl: "/img/deur.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
+pinterest_url: https://nl.pinterest.com/aypenbv/deuren/
 
 ---
 Aan voor- en achterdeuren worden hoge eisen gesteld. Enerzijds is een stevige en solide uitvoering noodzakelijk in verband met veelvuldig gebruik. Anderzijds hecht men veel waarde aan vorm, uitstraling en design. 
