@@ -42,24 +42,24 @@ fields:
   name: pinterest_url
   label: Pinterest url
 pages:
+- kozijnen.md
+- aanbouw_verbouw.md
+- duurzaam.md
+- test7.md
+- badkamers.md
 - veranda.md
+- schoonheid.md
+- sanitair.md
+- LEDverlichting.md
+- kwaliteit.md
 - serre.md
 - zonwering/index.html
 - deuren.md
 - tegels.md
-- kozijnen.md
-- LEDverlichting.md
 - dakkapellen.md
-- sanitair.md
 - contact.html
 - schuifpuien.md
 - aanbod.html
-- duurzaam.md
-- test7.md
-- badkamers.md
-- schoonheid.md
-- kwaliteit.md
 - showroom.md
 - vloerverwarming.md
-- aanbouw_verbouw.md
 - _uploads/tegels.md
