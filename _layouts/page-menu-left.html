@@ -26,7 +26,7 @@ layout: default
                 </div>
                 {% endif %}
                     {% if page.titlelogo != nil and page.titlelogo != "" %}
-                    <h2><img src="{{ page.titlelogo }}" style="max-height: 30px;" /></h2>
+                    <h2><img src="{{ page.titlelogo }}" style="max-height: 30px;" />&nbsp;&nbsp;{{ page.title }}</h2>
                     {% else %}
                     <h2>{{ page.title }}</h2>
                     {% endif %}
