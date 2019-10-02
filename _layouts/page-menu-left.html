@@ -8,10 +8,12 @@ layout: default
         <div class="row">
             <!-- article -->
             <article>
-
-
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 blog-content pull-left">
-                {% if page.mainImageUrl != nil and page.mainImageUrl != "" %}
+                {% if page.mainYouTubeUrl != nil and page.mainYouTubeUrl != "" %}
+                <div class="img-holder">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/{{ page.mainYouTubeUrl }}?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe>
+                </div>
+                {% elsif page.mainImageUrl != nil and page.mainImageUrl != "" %}
                 <div class="img-holder">
                     <img src="{{ page.mainImageUrl }}" alt="{{ page.title }}" height="{{ page.mainImageHeight }}"
                          width="{{ page.mainImageWidth }}">
@@ -23,19 +25,22 @@ layout: default
                     {% endif %}
                 </div>
                 {% endif %}
-
+                    {% if page.titlelogo != nil and page.titlelogo != "" %}
+                    <h2><img src="{{ page.titlelogo }}" style="max-height: 30px;" /></h2>
+                    {% else %}
                     <h2>{{ page.title }}</h2>
+                    {% endif %}
                     <p>
                         {{ content }}
                     </p>
                     <br>
 
                     {% include aypentool.html %}
-                    
+
                     {% if page.pinterest_url %}
                         <a data-pin-do="embedBoard" data-pin-lang="nl" data-pin-board-width="940" data-pin-scale-height="600" data-pin-scale-width="80" href="{{ page.pinterest_url }}"></a>
                     {% endif %}
-                    
+
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-push-0 col-md-push-0 col-sm-push-3 col-xs-push-0 sidebar blog-right right">
