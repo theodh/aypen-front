@@ -42,6 +42,7 @@ fields:
   name: pinterest_url
   label: Pinterest url
 pages:
+- aanbod.html
 - kozijnen.md
 - aanbouw_verbouw.md
 - duurzaam.md
@@ -59,7 +60,6 @@ pages:
 - dakkapellen.md
 - contact.html
 - schuifpuien.md
-- aanbod.html
 - showroom.md
 - vloerverwarming.md
 - _uploads/tegels.md
