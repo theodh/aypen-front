@@ -15,7 +15,6 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-  match: "**/*"
 upload_dir: img/content
 public_path: "/img/content"
 front_matter_path: "/img/content"
@@ -26,6 +25,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
+  install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: forestryio/build:latest
   mount_path: "/opt/buildhome/repo"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future

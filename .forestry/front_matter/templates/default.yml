@@ -42,7 +42,10 @@ fields:
   name: pinterest_url
   label: Pinterest url
 pages:
+- deuren.md
 - kozijnen.md
+- aanbod.html
+- zonwering/index.html
 - aanbouw_verbouw.md
 - duurzaam.md
 - test7.md
@@ -53,13 +56,10 @@ pages:
 - LEDverlichting.md
 - kwaliteit.md
 - serre.md
-- zonwering/index.html
-- deuren.md
 - tegels.md
 - dakkapellen.md
 - contact.html
 - schuifpuien.md
-- aanbod.html
 - showroom.md
 - vloerverwarming.md
 - _uploads/tegels.md
