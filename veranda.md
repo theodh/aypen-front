@@ -2,7 +2,7 @@
 title: Veranda's
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/terrasoverkapping-mijn-bedrijf.webp"
+mainImageUrl: "/img/content/serre 2 voor website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 aypentool: veranda
