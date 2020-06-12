@@ -2,7 +2,7 @@
 title: Veranda's
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/terrasoverkapping-verano-1.webp"
+mainImageUrl: "/img/content/terrasoverkapping-verano-2.webp"
 mainImageHeight: ''
 mainImageWidth: 100%
 aypentool: veranda
