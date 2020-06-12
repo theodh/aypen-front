@@ -2,7 +2,7 @@
 title: Serres
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/serre-2.jpg"
+mainImageUrl: "/img/content/serre-1.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over serres
