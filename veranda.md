@@ -1,6 +1,6 @@
 ---
 title: Veranda's
-layout: page-menu-left
+layout: page
 menu-left: menu-aanbod.html
 mainImageUrl: "/img/content/terrasoverkapping-website-aypen.webp"
 mainImageHeight: ''
