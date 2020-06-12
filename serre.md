@@ -1,6 +1,6 @@
 ---
 title: Serres
-layout: page-menu-left
+layout: page
 menu-left: menu-aanbod.html
 mainImageUrl: "/img/content/serre-finstral-website.jpg"
 mainImageHeight: ''
