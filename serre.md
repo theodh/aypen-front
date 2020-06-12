@@ -2,7 +2,7 @@
 title: Serres
 layout: page
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/serre-finstral-website.jpg"
+mainImageUrl: "/img/content/f-serre-website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over serres
