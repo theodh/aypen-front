@@ -1,6 +1,6 @@
 ---
 title: Serres
-layout: page
+layout: page-menu-left
 menu-left: menu-aanbod.html
 mainImageUrl: "/img/content/finstral-altijd-aangenaam-woonklimaat.jpg"
 mainImageHeight: ''
