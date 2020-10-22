@@ -6,7 +6,7 @@ description: Uitleg over kozijnen
 keywords: kozijnen
 author: Judy Heeres
 aypentool: window
-mainImageUrl: "/img/content/finstral kozijn website.jpg"
+mainImageUrl: "/img/content/afbeelding-kozijnen-website.png"
 mainImageHeight: ''
 mainImageWidth: 100%
 pinterest_url: https://nl.pinterest.com/aypenbv/kozijnen/
