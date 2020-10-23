@@ -10,6 +10,7 @@ mainImageUrl: "/img/content/albud-kozijnen-huis.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 pinterest_url: https://nl.pinterest.com/aypenbv/kozijnen/
+published: false
 
 ---
 Aypen levert kunststof kozijnen die voldoen aan de moderne technieken met de uitstraling die past bij uw huis. Kiest u voor kunststof kozijnen dan kiest u voor onderhoudsarme, energiebesparende, geluidswerende, inbraakwerende, duurzame en milieuvriendelijke kozijnen.  
