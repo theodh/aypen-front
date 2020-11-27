@@ -2,7 +2,7 @@
 title: Tegels
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/keramische tegels website.jpg"
+mainImageUrl: "/img/content/visgraatvloer-voor-website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Tegels
