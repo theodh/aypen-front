@@ -1,6 +1,6 @@
 ---
 title: Plissé
-titlelogo: ''
+titlelogo: "/img/content/polysun/symbool-plisse.png"
 layout: page-menu-left
 menu-left: menu-polysun.html
 mainImageUrl: ''
