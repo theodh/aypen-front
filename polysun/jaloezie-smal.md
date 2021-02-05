@@ -3,7 +3,7 @@ title: Jaloezieën Smal
 titlelogo: "/img/content/polysun/symbool-jaloezie.png"
 layout: page-menu-left
 menu-left: menu-polysun.html
-mainImageUrl: "/img/content/polysun/polysun-jaloezie-smal.png"
+mainImageUrl: ''
 mainImageHeight: https://www.polysun.be/nl/jaloezieen-smal
 mainImageWidth: 100%
 description: Uitleg over smalle Jaloezieën van Polysun
