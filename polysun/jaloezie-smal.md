@@ -1,5 +1,5 @@
 ---
-title: Jaloezieën Smal
+title: ''
 titlelogo: "/img/content/polysun/symbool-jaloezie.png"
 layout: page-menu-left
 menu-left: menu-polysun.html
