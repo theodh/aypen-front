@@ -1,6 +1,6 @@
 ---
 title: Jaloezieën
-titlelogo: "/img/content/polysun/symbool-jaloezie.png"
+titlelogo: ''
 layout: page-menu-left
 menu-left: menu-polysun.html
 mainImageUrl: https://www.polysun.be/nl/jaloezieen
