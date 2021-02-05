@@ -8,7 +8,6 @@ mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Jaloezieën van Polysun
 keywords: Polysun Jaloezieën
-published: false
 
 ---
 Hou je van een strakke en tijdloze zonwering? Kies dan voor Polysun ScreenLine jaloezieën.
