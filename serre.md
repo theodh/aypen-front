@@ -2,7 +2,7 @@
 title: Serres
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/finstral-altijd-aangenaam-woonklimaat.jpg"
+mainImageUrl: "/img/content/veranda-1.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over serres
