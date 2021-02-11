@@ -2,13 +2,14 @@
 title: Sanitair
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/badkamer 2 stock.jpg"
+mainImageUrl: "/img/content/sanitair-website.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Sanitair
 keywords: Sanitair, douche, badkamer, bad, toilet, wastafel, badmeubels, kranen, verwarming,
   spiegel, accesoires, schakelmateriaal
 author: Judy Heeres
+pinterest_url: ''
 
 ---
 Aypen begrijpt dat iedereen een andere smaak heeft en iedere klant zijn of haar badkamer op een andere manier in wil richten. Daarom bieden wij in ons sanitair aanbod vele diverse producten. Op deze manier kan iedereen bij Aypen de beste producten vinden, zodat wij iedereen van dienst kunnen zijn.
