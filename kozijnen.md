@@ -6,7 +6,7 @@ description: Uitleg over kozijnen
 keywords: kozijnen
 author: Judy Heeres
 aypentool: window
-mainImageUrl: "/img/content/albud-kozijnen-huis-2.jpg"
+mainImageUrl: "/img/content/kozijnen.png"
 mainImageHeight: ''
 mainImageWidth: 100%
 pinterest_url: https://nl.pinterest.com/aypenbv/kozijnen/
