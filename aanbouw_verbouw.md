@@ -2,7 +2,7 @@
 title: Aanbouw, Verbouw & Renovatie
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/verbouw.jpg"
+mainImageUrl: "/img/content/foto-albud-37.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over aanbouw, verbouw en renovatie
