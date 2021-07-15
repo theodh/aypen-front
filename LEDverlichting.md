@@ -2,7 +2,7 @@
 title: LED verlichting
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/inbouwspots 1 website.jpg"
+mainImageUrl: "/img/content/ledlighting-3.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over LED verlichting energiezuinige verlichting die u voor uw
@@ -10,6 +10,7 @@ description: Uitleg over LED verlichting energiezuinige verlichting die u voor u
   showroom en kies uw favoriete verlichting.
 keywords: LED verlichting
 author: Judy Heeres
+pinterest_url: ''
 
 ---
 LED verlichting is op dit moment de meest energiezuinige verlichting die u voor uw woning kunt aanschaffen.
