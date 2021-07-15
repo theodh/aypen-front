@@ -2,7 +2,7 @@
 title: LED verlichting
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/ledlighting-3.jpg"
+mainImageUrl: "/img/content/image_6483441-1.JPG"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over LED verlichting energiezuinige verlichting die u voor uw
