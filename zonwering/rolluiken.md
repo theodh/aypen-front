@@ -2,8 +2,8 @@
 title: Rolluiken
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: ''
-mainImageHeight: ''
+mainImageUrl: "/img/content/rolluik_volet_rv40_kwartsgrijs.jpg"
+mainImageHeight: "/img/content/rolluik-verano.png"
 mainImageWidth: 100%
 aypentool: shutter
 description: Uitleg over rolluiken
