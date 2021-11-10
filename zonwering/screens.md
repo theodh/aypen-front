@@ -2,7 +2,7 @@
 title: Screens
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: "/img/content/ritsscreen-verano-website.jpg"
+mainImageUrl: "/img/content/screens-verano-voor-woonhuis.jpg"
 mainImageHeight: 300px
 mainImageWidth: 217px
 description: Uitleg over screens
