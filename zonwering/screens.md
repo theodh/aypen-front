@@ -2,7 +2,7 @@
 title: Screens
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: "/img/content/kopie-screen-aypen.jpg"
+mainImageUrl: "/img/content/screens-verano.png"
 mainImageHeight: 300px
 mainImageWidth: 217px
 description: Uitleg over screens
