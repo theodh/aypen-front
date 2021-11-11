@@ -2,7 +2,7 @@
 title: Screens
 layout: page-menu-left
 menu-left: menu-zonwering.html
-mainImageUrl: "/img/content/zonwerend_screen_zonnescreen_ritsscreen_ritsscreens_screens_binnenscreens_v540_wit_sfeer.jpg"
+mainImageUrl: "/img/content/screens-verano.jpg"
 mainImageHeight: 300px
 mainImageWidth: 217px
 description: Uitleg over screens
