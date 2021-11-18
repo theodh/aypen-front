@@ -1,2 +1,2 @@
 # Aypen Front
-## Copyright HollandWare, All rights reserved.
+## Copyright HollandWare, All rights reserved
