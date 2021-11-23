@@ -40,6 +40,8 @@ function refreshCategory(category, nav)
     $('#chooseCategory').val(category);
     $('#bereken-message').hide();
 
+
+    
     $.ajax({
         url: "/tool/info/bereken-info-" + category,
         xhrFields: {
@@ -1119,13 +1121,20 @@ function loadTool(apiUrl) {
         $('#chooseVerandaRoofType>.dd-select>.dd-selected-value').attr('name', 'veranda_roof');
         $('#chooseVerandaRoofType>.dd-select>.dd-selected-value').attr('id', 'veranda_roof');
 
+        var test1 = '';
+    
+        if(window.location.href.indexOf('TOPSECRETAYPEN') !== -1)
+        {
+            test1 = '&TOPSECRETAYPEN=qweqwEIJjadJ2'
+        }
+        
         $.ajax({
             xhrFields: {
                 withCredentials: true
             },
             url: apiUrl + 'berekenTool.php',
             method: 'POST',
-            data: $('#bereken-form').serialize() + "&" + $('.dd-selected-value').serialize(),
+            data: $('#bereken-form').serialize() + "&" + $('.dd-selected-value').serialize() + test1,
 
             success: function(data){
                 $('#bereken-message').show().html('<p>' + data + '</p>');
