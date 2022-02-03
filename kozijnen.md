@@ -10,6 +10,7 @@ mainImageUrl: "/img/content/kozijnen.png"
 mainImageHeight: ''
 mainImageWidth: 100%
 pinterest_url: https://nl.pinterest.com/aypenbv/kozijnen/
+published: false
 
 ---
 Met kozijnen van Aypen krijgt u geniale oplossingen op techniek, wooncomfort en de kleur die bij u past. Het systeem is op elk detail doordacht en voldoet aan de Nederlandse normen.
