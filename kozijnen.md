@@ -18,25 +18,30 @@ Aangezien Nederland stap voor stap van het aardgas af moet, gaan we onze huizen 
 
 We hebben de voordelen van kunststof kozijnen even op een rijtje gezet:
 
+
 ## Onderhoudsarm
 
 ![image alt imgAlignLeft](/img/producten/onderhoudsarm.png)
 Kozijnen van Aypen zijn gemakkelijk te reinigen en zijn onderhoudsarm. In hoge mate bestand tegen slijtage en milieu-invloeden en ze hebben een lange levensduur. Al met al nooit meer verven of lakken; minder beschadigingen en minder aantrek van vuil, zorgen ervoor dat afnemen met een vochtige doek voldoende is.
+
 
 ## Duurzaam
 
 ![image alt imgAlignLeft](/img/producten/duurzaam.png)
 Kozijnen van Aypen zorgen ervoor dat de warmte binnen blijft en het geluid buiten. Ze bieden veiligheid en zorgen voor een unieke woonsfeer. Naast de lange levensduur van kunststof kozijnen, zorgen de hoge isolatiewaarden voor lagere CO2 uitstoot en is er veel aandacht voor het gebruik van duurzame grondstoffen en recycling. Met de isolerende kozijnen en glazen bespaart u aanzienlijk op uw stook- en koelingskosten.
 
+
 ## Flexibel
 
 ![image alt imgAlignLeft](/img/producten/flexibel.png)
 Naast de vele mogelijke vormen van de kozijnen is er al even veel keus in openingsmogelijkheden en beïnvloed het individuele karakter. Draaien, kiepen, zomer- en winterstand, kierstand; de mogelijkheden zijn ongekend. Met het veiligheidsglas minimaliseert de kans op inbraak.
 
+
 ## Inbraakwerend
 
 **_![image alt imgAlignLeft](/img/producten/inbraakwerend.png)_**
 Moderne kozijnen zijn afhankelijk van smaak en bouwstijl. Zo heeft u onder andere de keuze uit verschillende oppervlakken: gladde, gesatineerd of houtstructuur. Deze laatste is nagenoeg niet van hout te onderscheiden.
+
 
 Wilt u direct zien hoeveel nieuwe kozijnen u zullen gaan kosten, maak dan gebruik van onderstaande berekenhulp. De hieruit voortkomende resultaten kunt u eenvoudig naar ons versturen. Wij nemen dan zo snel mogelijk contact met u op om u verder te informeren over de levering en/of plaatsing.
 
