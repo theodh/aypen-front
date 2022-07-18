@@ -1,9 +1,9 @@
 ---
 title: Jaloezieën
-titlelogo: Smalle Jaloezieën
+titlelogo: ''
 layout: page-menu-left
 menu-left: ''
-mainImageUrl: ''
+mainImageUrl: "/img/content/jaloezieen.htm"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over smalle Jaloezieën van Polysun
