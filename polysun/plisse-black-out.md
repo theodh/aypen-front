@@ -1,6 +1,6 @@
 ---
 title: Plissé Black Out
-titlelogo: "/img/content/polysun/symbool-plisse-black-out.png"
+titlelogo: https://www.polysun.be/nl/plisse-black-out
 layout: page-menu-left
 menu-left: menu-polysun.html
 mainImageUrl: "/img/content/polysun/polysun-plisse-black-out.png"
@@ -8,6 +8,7 @@ mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé Black Outvan Polysun
 keywords: Polysun Plissé Black Out
+
 ---
 Wil je een kamer volledig kunnen verduisteren? 
 
