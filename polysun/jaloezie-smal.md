@@ -2,7 +2,7 @@
 title: Jaloezieën Smal
 titlelogo: ''
 layout: page-menu-left
-menu-left: menu-polysun.html
+menu-left: ''
 mainImageUrl: ''
 mainImageHeight: ''
 mainImageWidth: 100%
