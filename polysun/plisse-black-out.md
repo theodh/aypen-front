@@ -1,9 +1,9 @@
 ---
 title: Plissé Black Out
-titlelogo: "/img/content/polysun/symbool-plisse.png"
+titlelogo: ''
 layout: page-menu-left
 menu-left: ''
-mainImageUrl: "/img/content/plisse-blackout-kleur.png"
+mainImageUrl: ''
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé Black Outvan Polysun
