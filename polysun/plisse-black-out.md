@@ -8,7 +8,6 @@ mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé Black Outvan Polysun
 keywords: Polysun Plissé Black Out
-published: false
 
 ---
 ![](/img/content/polysun-plissee.jpg)
