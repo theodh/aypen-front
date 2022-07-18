@@ -1,6 +1,6 @@
 ---
 title: Plissé
-titlelogo: https://www.polysun.be/nl/plisse
+titlelogo: ''
 layout: page-menu-left
 menu-left: menu-polysun.html
 mainImageUrl: ''
