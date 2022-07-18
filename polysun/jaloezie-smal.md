@@ -1,6 +1,6 @@
 ---
 title: Jaloezieën Smal
-titlelogo: ''
+titlelogo: https://www.polysun.be/nl/jaloezieen-smal
 layout: page-menu-left
 menu-left: menu-polysun.html
 mainImageUrl: ''
