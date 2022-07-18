@@ -3,7 +3,7 @@ title: Plissé Black Out
 titlelogo: https://www.polysun.be/nl/plisse-black-out
 layout: page-menu-left
 menu-left: menu-polysun.html
-mainImageUrl: "/img/content/polysun/polysun-plisse-black-out.png"
+mainImageUrl: ''
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé Black Outvan Polysun
