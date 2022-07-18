@@ -1,5 +1,5 @@
 ---
-title: Jaloezieën Smal
+title: Jaloezieën
 titlelogo: ''
 layout: page-menu-left
 menu-left: ''
