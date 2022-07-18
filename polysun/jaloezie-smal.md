@@ -1,6 +1,6 @@
 ---
 title: Jaloezieën
-titlelogo: ''
+titlelogo: Smalle Jaloezieën
 layout: page-menu-left
 menu-left: ''
 mainImageUrl: ''
