@@ -3,7 +3,7 @@ title: Plissé
 titlelogo: "/img/content/polysun-plissee.jpg"
 layout: page-menu-left
 menu-left: menu-polysun.html
-mainImageUrl: "/img/content/plisse-blackout-kleur.png"
+mainImageUrl: "/img/content/polysun-plissee.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé van Polysun
