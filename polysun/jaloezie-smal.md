@@ -3,8 +3,8 @@ title: Jaloezieën Smal
 titlelogo: https://www.polysun.be/nl/jaloezieen-smal
 layout: page-menu-left
 menu-left: menu-polysun.html
-mainImageUrl: ''
-mainImageHeight: https://www.polysun.be/nl/jaloezieen-smal
+mainImageUrl: https://www.polysun.be/nl/jaloezieen-smal
+mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over smalle Jaloezieën van Polysun
 keywords: Polysun smalle Jaloezieën
