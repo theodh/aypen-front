@@ -1,0 +1,1295 @@
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('html') -->
+<!-- FILE NAME SUGGESTIONS:
+   * html--node--14.tpl.php
+   * html--node--%.tpl.php
+   * html--node.tpl.php
+   x html.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/general/html.tpl.php' -->
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="nl" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="nl" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="nl" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="nl" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="nl" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"5dcc5fbaf4",applicationID:"63759375"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.polysun.be/sites/default/files/favicon.png" type="image/png" />
+<meta name="description" content="Polysun ScreenLine jaloezieën passen in elk interieur. In combinatie met de juiste bediening kun je perfect bepalen hoeveel licht en warmte je de kamer wilt binnenlaten." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.polysun.be/nl/jaloezieen" />
+<link rel="shortlink" href="https://www.polysun.be/nl/node/14" />
+<meta property="og:site_name" content="Polysun" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.polysun.be/nl/jaloezieen" />
+<meta property="og:title" content="Jaloezieën" />
+<meta property="og:updated_time" content="2016-11-18T12:02:12+01:00" />
+<meta property="article:published_time" content="2016-08-22T16:06:02+02:00" />
+<meta property="article:modified_time" content="2016-11-18T12:02:12+01:00" />
+  <title>Jaloezieën | Polysun</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="https://www.polysun.be/sites/default/files/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.polysun.be/sites/default/files/css/css_Ryx9Pz_OYTYu5O1RzHwY2DRtpwjE4DI9zdJNibCUEgA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.polysun.be/sites/default/files/css/css_5umAdYEmIy69iumqjNhgmDmSdUDub-lG5UnQsugpkGs.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.polysun.be/sites/default/files/css/css_Is3lW_n7-3MTBHPmsv2hSWsghe3-9MfezAdbEeZj3Qw.css" media="all" />
+  <script src="https://www.polysun.be/sites/default/files/js/js_A01mE0OOkhISVSQubhhc-km--VAXp6zYCwpcghpBC28.js"></script>
+<script src="https://www.polysun.be/sites/default/files/js/js_0lUO57EwPay-NULSwdyvfgAbcmp8ADswOfokYKr7L4k.js"></script>
+<script src="https://www.polysun.be/sites/default/files/js/js_Uflu18manmfOqI9QRb5tRF4tBAvRaiCACZRAeg_odxQ.js"></script>
+<script src="https://www.polysun.be/sites/default/files/js/js_PYcmOjPmC7cKVfUFo7L-2TkxZFSDscfqHC1FpZ-AOTk.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"nl\/","ajaxPageState":{"theme":"polysun","theme_token":"zz9b-80D3SSN884xgLG4Zw1ZNi00MkhHGCgYyvfWp-Q","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/commerce_add_to_cart_confirmation\/js\/commerce_add_to_cart_confirmation.js":1,"public:\/\/languages\/nl_iFU5DZokTJ1_CAU8f_LkBAfgk0kSi4Ck38TU7jmWcC8.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_default_style.js":1,"sites\/all\/themes\/polysun\/js\/libs\/slick\/slick.min.js":1,"sites\/all\/themes\/polysun\/js\/libs\/fancybox\/jquery.fancybox.min.js":1,"sites\/all\/themes\/polysun\/js\/libs\/matchHeight\/jquery.matchHeight-min.js":1,"sites\/all\/themes\/polysun\/js\/responsive.js":1,"sites\/all\/themes\/polysun\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/commerce_add_to_cart_confirmation\/css\/commerce_add_to_cart_confirmation.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_default_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"sites\/all\/themes\/polysun\/system.menus.css":1,"sites\/all\/themes\/polysun\/js\/libs\/fancybox\/jquery.fancybox.min.css":1,"sites\/all\/themes\/polysun\/js\/libs\/slick\/slick-theme.css":1,"sites\/all\/themes\/polysun\/css\/font-awesome.css":1,"sites\/all\/themes\/polysun\/css\/theme.css":1,"sites\/all\/themes\/polysun\/static-css\/fixed.css":1}},"colorbox":{"opacity":"0.85","current":"{current} van {total}","previous":"\u00ab Vorige","next":"Volgende \u00bb","close":"Sluiten","maxWidth":"100%","maxHeight":"100%","fixed":true},"better_exposed_filters":{"views":{"front_text":{"displays":{"block":{"filters":[]}}},"product_types":{"displays":{"block_2":{"filters":[]},"block":{"filters":[]},"block_1":{"filters":[]}}},"products":{"displays":{"block":{"filters":[]}}},"advantages":{"displays":{"block_1":{"filters":[]}}}}},"commerceAddToCartConfirmation":{"overlayClass":"commerce_add_to_cart_confirmation_overlay","overlayParentSelector":"body"},"clientsideValidation":{"general":{"months":{"januari":1,"jan":1,"februari":2,"feb":2,"maart":3,"mrt":3,"april":4,"apr":4,"mei":5,"juni":6,"jun":6,"juli":7,"jul":7,"augustus":8,"aug":8,"september":9,"sep":9,"oktober":10,"okt":10,"november":11,"nov":11,"december":12,"dec":12}}}});</script>
+  <script src="https://use.typekit.net/zdc3wue.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src='https://restapi.mailplus.nl/integrationservice-1.1.0/app/subscribe_popup/IhMAE2NQzx5hU6yKTnjydB1KkV2zzF6L/9uB4nbm4XMaKuFLxKGP4j5gSUcFdT3f7'></script>
+  <script type='text/javascript' src='https://static.mailplus.nl/jq//jquery.validate.min.js' language='javascript'></script>
+  <link rel='stylesheet' href='https://static.mailplus.nl/jq//css/ui-lightness/jquery-ui-1.8.18.custom.css' type='text/css'></link>
+  <script type='text/javascript' src='https://static.mailplus.nl/jq/jquery-ui-1.8.18.custom.min.js' language='javascript'></script>
+  <script type='text/javascript' src='https://m13.mailplus.nl/genericservice/code/servlet/React?command=getFormJs&uid=2110448&feid=tZkdq7ifAeG2D2CTLkJC&p=https&om=t&of=h'></script>
+
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript"> _linkedin_data_partner_id = "98619"; </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=98619&fmt=gif" /> </noscript>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-14 node-type-product-type i18n-nl section-jaloezieen" >
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TQ6WNLZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TQ6WNLZ');</script>
+<!-- End Google Tag Manager -->
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('page') -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--node--product-type.tpl.php
+   * page--node--14.tpl.php
+   * page--node--%.tpl.php
+   * page--node.tpl.php
+   * page.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/pages/page--node--product_type.tpl.php' -->
+<header class="header" id="header" role="banner">
+  <div class="navigation--top">
+    <div class="wrapper">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--header.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="header__region region region-header">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--dms-general-settings--social-media.tpl.php
+   * block--dms-general-settings.tpl.php
+   * block--header.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-dms-general-settings-social-media" class="block block-dms-general-settings social-media-block first odd">
+
+      
+  <div class='social-content'><a href="https://www.facebook.com/zonweringinisolatieglas" target="_blank" class="share-btn"><span class='fa fa-facebook'></span></a><a href="https://www.linkedin.com/company/10784661/" target="_blank" class="share-btn"><span class='fa fa-linkedin'></span></a><a href="https://www.instagram.com/polysun_zonwering/" target="_blank" class="share-btn"><span class='fa fa-instagram'></span></a><a href="https://www.youtube.com/channel/UCSQZZa4wI-M3Swx4A09DUgA" target="_blank" class="share-btn"><span class='fa fa-youtube'></span></a></div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu-block--6.tpl.php
+   * block--menu-block.tpl.php
+   * block--header.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-menu-block-6" class="block block-menu-block top-user-menu-block even" role="navigation">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('menu_block_wrapper') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+<div class="menu-block-wrapper menu-block-6 menu-name-user-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first last leaf menu-mlid-2535"><a href="/nl/user/login" class="menu__link menu__link"><span class='fa fa-user'></span>Log in</a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu-block--5.tpl.php
+   * block--menu-block.tpl.php
+   * block--header.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-menu-block-5" class="block block-menu-block top-menu-block last odd" role="navigation">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('menu_block_wrapper') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+<div class="menu-block-wrapper menu-block-5 menu-name-menu-top-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf menu-mlid-2871"><a href="/nl/werken-bij-polysun" id="professionals-link" class="menu__link menu__link">Werken bij Polysun</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf menu-mlid-1634"><a href="/nl/voordelen-van-polysun" class="menu__link menu__link">Voordelen van Polysun</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf menu-mlid-2654"><a href="/nl/vind-een-verkooppunt-je-buurt" id="locator-link" class="menu__link menu__link">Vind een verkooppunt</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf menu-mlid-1773"><a href="/nl/polysun-voor-professionals" id="professionals-link" class="menu__link menu__link">Professionals</a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+</div>
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--header-outside.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-header-outside">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu-block--7.tpl.php
+   * block--menu-block.tpl.php
+   * block--header-outside.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-menu-block-7" class="block block-menu-block first odd" role="navigation">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('menu_block_wrapper') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+<div class="menu-block-wrapper menu-block-7 menu-name-menu-search parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first last leaf menu-mlid-2534"><a href="/nl/search" class="menu__link menu__link"><span class='fa fa-search' title='zoeken'></span></a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x block--locale--language.tpl.php
+   * block--locale.tpl.php
+   * block--header-outside.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block--locale--language.tpl.php' -->
+<div id="block-locale-language" class="block block-locale language-choice-block last even" role="complementary">
+  <ul class="language-switcher-locale-url"><li class="en first"><a href="/en/venetian-blind" class="language-link" xml:lang="en" title="Venetian blind">en</a></li>
+<li class="nl last active"><a href="/nl/jaloezieen" class="language-link active" xml:lang="nl" title="Jaloezieën">nl</a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block--locale--language.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+  </div>
+  <div class="wrapper">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--navigation.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-navigation">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu-block--1.tpl.php
+   * block--menu-block.tpl.php
+   * block--navigation.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/menu_block/block--menu_block--1.tpl.php' -->
+<nav id="main-navigation-block">
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('menu_block_wrapper') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+<div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-active-trail is-leaf first leaf active-trail menu-mlid-1627"><a href="/nl/producten" class="menu__link is-active-trail is-active active active-trail">Producten</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1628"><a href="/nl/toepassingen" class="menu__link">Toepassingen</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1758"><a href="/nl/downloads" class="menu__link">Downloads</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1626" id="home-link"><a href="/nl" class="menu__link header__logo" id="logo"><img src="/sites/all/themes/polysun/images/svg/logo.svg" class="header__logo-image" /></a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1630"><a href="/nl/nieuws" class="menu__link">Nieuws</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1631"><a href="/nl/over-polysun" class="menu__link">Over Polysun</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2795"><a href="/nl/blog" class="menu__link">Blog</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1770"><a href="/nl/contact" class="menu__link">Contact</a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+
+</nav>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/menu_block/block--menu_block--1.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+    <a href="/nl" id="mm-logo"><img class="mm-logo-image" src="/sites/all/themes/polysun/images/svg/logo.svg"></a>
+  </div>
+</header>
+
+<div id="page">
+  <div id="page-container">
+    <div id="main">
+
+      <div id="content" class="column" role="main">
+        <header id="side-column-header">
+          <div class="inner">
+            <div>
+                                            <h1 class="page__title title" id="page-title">Jaloezieën</h1>
+                            
+                              <span class="title-subcaption">Strak & tijdloos</span>
+                          </div>
+          </div>
+        </header>
+
+                <a id="main-content"></a>
+                                
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--content.tpl.php
+   x region--no-wrapper.tpl.php
+   * region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region--no-wrapper.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x block--no-wrapper.tpl.php
+   * block--system--main.tpl.php
+   * block--system.tpl.php
+   * block--content.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/block--no-wrapper.tpl.php' -->
+
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('node') -->
+<!-- FILE NAME SUGGESTIONS:
+   * node--14.tpl.php
+   * node--product-type.tpl.php
+   x node.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/general/node.tpl.php' -->
+<article class="node-14 node node-product-type view-mode-full clearfix" about="/nl/jaloezieen" typeof="sioc:Item foaf:Document">
+
+      <header>
+                  <span property="dc:title" content="Jaloezieën" class="rdf-meta element-hidden"></span>
+      
+          </header>
+  
+  
+  
+  
+</article>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/general/node.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/block--no-wrapper.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--product-types-block.tpl.php
+   * block--views.tpl.php
+   * block--content.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/views/block--views--product_types-block.tpl.php' -->
+<div id="block-views-product-types-block" class="block block-views product-type-selector-block last even">
+
+        <h3 class="block__title block-title">Kies uw type<span class="fa fa-angle-down"></span></h3>
+    
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view--product-types--block.tpl.php
+   * views-view--product-types.tpl.php
+   * views-view.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view--product-types--block.tpl.php' -->
+  <nav id="products-type-menu">
+    <ul>
+        
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_unformatted__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-unformatted--product-types--block.tpl.php
+   * views-view-unformatted--product-types.tpl.php
+   * views-view-unformatted.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-unformatted--product-types--block.tpl.php' -->
+    <li>
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+<a href="/nl/jaloezieen" class="active"><span class='icon' style='background:url(/sites/default/files/product_type_icons/1_0.png) no-repeat;'></span><span>Jaloezieën</span></a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+
+    </li>
+    <li>
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+<a href="/nl/jaloezieen-smal"><span class='icon' style='background:url(/sites/default/files/product_type_icons/1_0_0.png) no-repeat;'></span><span>Jaloezieën Smal</span></a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+
+    </li>
+    <li>
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+<a href="/nl/plisse"><span class='icon' style='background:url(/sites/default/files/product_type_icons/2_0.png) no-repeat;'></span><span>Plissé</span></a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+
+    </li>
+    <li>
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+<a href="/nl/plisse-black-out"><span class='icon' style='background:url(/sites/default/files/product_type_icons/3_0.png) no-repeat;'></span><span>Plissé black out</span></a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+
+    </li>
+    <li>
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+<a href="/nl/rolgordijn"><span class='icon' style='background:url(/sites/default/files/product_type_icons/4_0.png) no-repeat;'></span><span>Rolgordijn</span></a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-fields--product-types--block.tpl.php' -->
+
+    </li>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view-unformatted--product-types--block.tpl.php' -->
+
+    </ul>
+  </nav>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view--product-types--block.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/views/block--views--product_types-block.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region--no-wrapper.tpl.php' -->
+
+              </div>
+
+      
+              <aside class="sidebars">
+                    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--sidebar-second.tpl.php
+   x region--sidebar.tpl.php
+   * region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region--sidebar.tpl.php' -->
+  <section class="region region-sidebar-second column sidebar">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--products-block.tpl.php
+   * block--views.tpl.php
+   * block--sidebar-second.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-views-products-block" class="block block-views first last odd">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view--products--block.tpl.php
+   * views-view--products.tpl.php
+   * views-view.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view--products--block.tpl.php' -->
+  <div id="products">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_unformatted__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-unformatted--products--block.tpl.php
+   * views-view-unformatted--products.tpl.php
+   * views-view-unformatted.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-unformatted--products--block.tpl.php' -->
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-koordbediening" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/jaloezie_koordbediening_b.jpg?itok=EZTPmUOx') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met koordbediening<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met koordbediening</span>
+    <p>Een Polysun ScreenLine jaloeziesysteem met koordbediening is een praktische oplossing.</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-knopbediening-kozijn" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/jaloezie_draaiknop_kozijn_b.jpg?itok=csm5RQNe') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met knopbediening kozijn<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met knopbediening kozijn</span>
+    <p>Met de Polysun ScreenLine jaloezieën met knopbediening kozijn draai je de lamellen in een handomdraai open en dicht.</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-draaiknop-bediening-side" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/jaloezie_met_draaiknop_b.jpg?itok=GF3Ljed0') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met draaiknop bediening (side)<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met draaiknop bediening (side)</span>
+    <p>De Polysun ScreenLine jaloezieën met een draaiknop op de zijbalk is een alleen-kantelbaar systeem.</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-schuifmagneet" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/jaloezie_schuifbediening_b.jpg?itok=XgjKA6z2') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met schuifmagneet<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met schuifmagneet</span>
+    <p>Met de Polysun ScreenLine jaloezieën met schuifmagneet open en sluit je in één beweging de lamellen, of zet je ze op een kier.</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-batterijmodule" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/sl22wnewbmwhite.jpg?itok=vrWOAWeG') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met batterijmodule<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met batterijmodule</span>
+    <p>Polysun ScreenLine jaloezieën met batterijmodule regelen op een stijlvolle manier licht en warmte.</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-interne-motor" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/jaloezie_interne_motor_b.jpg?itok=1Qq6pC3C') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met interne motor<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met interne motor</span>
+    <p>Polysun ScreenLine jaloezieën met interne motor garanderen een bijna geruisloosloze werking.</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-externe-motor" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/jaloezie_met_externe_motor.jpg?itok=96uhjbQu') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met externe motor<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met externe motor</span>
+    <p>Een Polysun ScreenLine jaloeziesysteem met externe motor is een praktische oplossing.</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-kantelstaaf-0" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/sl20-22c_venetian_wand.jpg?itok=wVG9GF7j') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met kantelstaaf<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met kantelstaaf</span>
+    <p>Met de Polysun  jaloezie met kantelstaaf heb je een haast onverwoestbaar systeem</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__products__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--products--block.tpl.php
+   * views-view-fields--products.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+<a href="/nl/producten/jaloezie-met-draaiknop-bovenhoek" class="product" style="background:url('https://www.polysun.be/sites/default/files/styles/product_thumb/public/product_images/sl20-22c_venetian_knob.jpg?itok=Y6OZTznA') no-repeat center center;">
+  <span class="overlay"></span>
+  <span class="product-title">Jaloezie met draaiknop in bovenhoek<span class="fa fa-angle-right"></span></span>
+  <div class="content">
+    <span class="product-title">Jaloezie met draaiknop in bovenhoek</span>
+    <p>Een Polysun ScreenLine systeem met draaiknop laat de lamellen makkelijk kantelen</p><span class='form-submit'><span>Product details</span><span class='fa fa-angle-right'></span></span>  </div>
+</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-fields--products--block.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view-unformatted--products--block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/products/views-view--products--block.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+  </section>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region--sidebar.tpl.php' -->
+
+        </aside>
+      
+    </div>
+  </div>
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--fw-content.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-fw-content">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--advantages-block-1.tpl.php
+   * block--views.tpl.php
+   * block--fw-content.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/views/block--views--advantages-block_1.tpl.php' -->
+<div id="block-views-advantages-block-1" class="block block-views advantages-block advantages-cta-block first last odd">
+    <div class="wrapper">
+                  
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view--advantages--block-1.tpl.php
+   * views-view--advantages.tpl.php
+   * views-view.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view--advantages--block-1.tpl.php' -->
+<div id="advantages-inner">
+      <div id="advantages-intro">
+      <header class="bundle-header">
+	<h2 class="rtecenter">
+		Waarom kiezen voor&nbsp;zonwering tussen glas?
+	</h2>
+
+	<p class="rtecenter">
+		<span class="title-subcaption">8 glasheldere&nbsp;voordelen</span>
+	</p>
+</header>
+    </div>
+
+    <div id="advantages">
+      
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_unformatted__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-unformatted--advantages--block-1.tpl.php
+   * views-view-unformatted--advantages.tpl.php
+   * views-view-unformatted.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-unformatted--advantages--block-1.tpl.php' -->
+<ul class="column-2">
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Bespaart ruimte achter het glas</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Duurzame onderdelen</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Biedt privacy</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Onderhoudsvrij</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Uitstekende licht- en warmteregulering</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Beschadigt niet</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Lange levensduur</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+            <li class="advantage">
+          
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__advantages__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--advantages--block-1.tpl.php
+   * views-view-fields--advantages.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+<span class="field-content">Wordt nooit vuil</span>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-fields--advantages--block-1.tpl.php' -->
+
+        </li>
+    </ul>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view-unformatted--advantages--block-1.tpl.php' -->
+
+    </div>
+
+    <div class="advantages-link">
+      <a href="/nl/voordelen-van-polysun" class="form-submit ghost"><span class='fa fa-bars'></span>Alle voordelen van Polysun</a>    </div>
+  </div>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/advantages/cta-block/views-view--advantages--block-1.tpl.php' -->
+
+    </div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/views/block--views--advantages-block_1.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   x region--cta.tpl.php
+   * region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/region/region--cta.tpl.php' -->
+  <div class="region region-cta">
+    <div class="wrapper">
+        
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--dms-general-settings--footer-cta-text.tpl.php
+   * block--dms-general-settings.tpl.php
+   * block--cta.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-dms-general-settings-footer-cta-text" class="block block-dms-general-settings first last odd">
+
+      
+  <div class="content"><p>
+	Wil je graag meer informatie?<br />
+	Mail je vraag naar <a href="mailto:info@polysun.be">info@polysun.be</a> of bel ons.
+</p>
+</div><span id='cta-tel-number'><span class='fa fa-phone'></span><a href='tel:+3237716743' style='text-decoration:none;'>+32 3 771 67 43</a></span>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/region/region--cta.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   x region--footer.tpl.php
+   * region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/region/region--footer.tpl.php' -->
+  <footer id="footer" class="region region-footer">
+    <div class="wrapper">
+        
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--dms-general-settings--footer-usps.tpl.php
+   * block--dms-general-settings.tpl.php
+   * block--footer.tpl.php
+   * block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/custom/block--dms_general_settings--footer_usps.tpl.php' -->
+<div id="block-dms-general-settings-footer-usps" class="block block-dms-general-settings footer-usp-block first odd">
+    <div id="footer-logo-container"><a href="/nl" id="footer-logo"><img src="/sites/all/themes/polysun/images/svg/logo.svg" class="footer__logo-image" /></a></div>
+    <div class="content">
+                  
+      <ul>
+	<li>
+		<a href="/node/12">10 jaar garantie!</a>
+	</li>
+	<li>
+		<a href="/node/12">Altijd geslepen</a>
+	</li>
+	<li>
+		<a href="/node/12">ISO gecertificeerd</a>
+	</li>
+</ul>
+    </div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/custom/block--dms_general_settings--footer_usps.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--dms-general-settings--footer-text.tpl.php
+   * block--dms-general-settings.tpl.php
+   * block--footer.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-dms-general-settings-footer-text" class="block block-dms-general-settings contact-data-block even">
+
+        <h3 class="block__title block-title">Contacteer ons</h3>
+    
+  <p>
+	<strong>Polysun bvba</strong><br />
+	Winninglaan 2&nbsp;<br />
+	9140 Temse<br />
+	Belgi&euml;<br />
+	+32 3&nbsp;771 67 43<br />
+	<a href="mailto:info@polysun.be">info@polysun.be</a>
+</p>
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views--product-types-block-1.tpl.php
+   * block--views.tpl.php
+   * block--footer.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-views-product-types-block-1" class="block block-views product-types-footer-block odd">
+
+        <h3 class="block__title block-title">Producten</h3>
+    
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view__product_types__block') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view--product-types--block.tpl.php
+   * views-view--product-types.tpl.php
+   * views-view.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view--product-types--block.tpl.php' -->
+  <nav id="products-type-menu">
+    <ul>
+        
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_list') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-list.tpl.php' -->
+<div class="item-list">    <ul>          <li class="">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block-1.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+<a href="/nl/jaloezieen" class="active"><span class='fa fa-angle-right'></span>Jaloezieën</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+
+</li>
+          <li class="">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block-1.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+<a href="/nl/jaloezieen-smal"><span class='fa fa-angle-right'></span>Jaloezieën Smal</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+
+</li>
+          <li class="">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block-1.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+<a href="/nl/plisse"><span class='fa fa-angle-right'></span>Plissé</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+
+</li>
+          <li class="">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block-1.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+<a href="/nl/plisse-black-out"><span class='fa fa-angle-right'></span>Plissé black out</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+
+</li>
+          <li class="">
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('views_view_fields__product_types__block_1') -->
+<!-- FILE NAME SUGGESTIONS:
+   x views-view-fields--product-types--block-1.tpl.php
+   * views-view-fields--product-types.tpl.php
+   * views-view-fields.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+<a href="/nl/rolgordijn"><span class='fa fa-angle-right'></span>Rolgordijn</a>
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/footer_block/views-view-fields--product-types--block-1.tpl.php' -->
+
+</li>
+      </ul></div>
+<!-- END OUTPUT from 'sites/all/modules/contrib/views/theme/views-view-list.tpl.php' -->
+
+    </ul>
+  </nav>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/views/product_type_menu/views-view--product-types--block.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu-block--4.tpl.php
+   * block--menu-block.tpl.php
+   * block--footer.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-menu-block-4" class="block block-menu-block main-menu-footer-block last even" role="navigation">
+
+        <h3 class="block__title block-title">Navigatie</h3>
+    
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('menu_block_wrapper') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+<div class="menu-block-wrapper menu-block-4 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-active-trail is-leaf first leaf active-trail menu-mlid-1627"><a href="/nl/producten" class="menu__link is-active-trail is-active active active-trail"><span class='fa fa-angle-right'></span>Producten</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1628"><a href="/nl/toepassingen" class="menu__link"><span class='fa fa-angle-right'></span>Toepassingen</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1758"><a href="/nl/downloads" class="menu__link"><span class='fa fa-angle-right'></span>Downloads</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1630"><a href="/nl/nieuws" class="menu__link"><span class='fa fa-angle-right'></span>Nieuws</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1631"><a href="/nl/over-polysun" class="menu__link"><span class='fa fa-angle-right'></span>Over Polysun</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2795"><a href="/nl/blog" class="menu__link"><span class='fa fa-angle-right'></span>Blog</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1770"><a href="/nl/contact" class="menu__link"><span class='fa fa-angle-right'></span>Contact</a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+    </div>
+  </footer>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/region/region--footer.tpl.php' -->
+
+</div>
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--bottom.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+  <div class="region region-bottom">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--menu-block--3.tpl.php
+   * block--menu-block.tpl.php
+   * block--bottom.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-menu-block-3" class="block block-menu-block footer-menu-block first odd" role="navigation">
+
+      
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('menu_block_wrapper') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+<div class="menu-block-wrapper menu-block-3 menu-name-menu-footer-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1729 nolink"><span>©2018 Polysun-Screenline</span></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf menu-mlid-1946"><a href="/nl/disclaimer" class="menu__link menu__link">Disclaimer</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf menu-mlid-1730"><a href="http://www.dms.be" target="_blank" class="menu__link menu__link">Site by D&#039;M&amp;S</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf menu-mlid-2874"><a href="/nl/cookieverklaring" class="menu__link menu__link">Cookieverklaring</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf menu-mlid-2870"><a href="/nl/frituur-lief" class="menu__link menu__link">Frituur Lief</a></li>
+</ul></div>
+
+<!-- END OUTPUT from 'sites/all/modules/contrib/menu_block/menu-block-wrapper.tpl.php' -->
+
+
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--dms-general-settings--social-media-footer.tpl.php
+   * block--dms-general-settings.tpl.php
+   * block--bottom.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+<div id="block-dms-general-settings-social-media-footer" class="block block-dms-general-settings social-media-block last even">
+
+      
+  <div class='social-content'><a href="https://www.facebook.com/zonweringinisolatieglas" target="_blank" class="share-btn"><span class='fa fa-facebook'></span></a><a href="https://www.linkedin.com/company/10784661/" target="_blank" class="share-btn"><span class='fa fa-linkedin'></span></a><a href="https://www.instagram.com/polysun_zonwering/" target="_blank" class="share-btn"><span class='fa fa-instagram'></span></a><a href="https://www.youtube.com/channel/UCSQZZa4wI-M3Swx4A09DUgA" target="_blank" class="share-btn"><span class='fa fa-youtube'></span></a></div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/blocks/block.tpl.php' -->
+
+  </div>
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/pages/page--node--product_type.tpl.php' -->
+
+  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--page-bottom.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+<!-- END OUTPUT from 'sites/all/themes/zen/templates/region.tpl.php' -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5dcc5fbaf4","applicationID":"63759375","transactionName":"M1xXZUFTCkoCAhdQCgoWdFJHWwtXTA8MXQA7SVRWVm0SUAYW","queueTime":0,"applicationTime":607,"atts":"HxtUEwlJGUQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
+<!-- END OUTPUT from 'sites/all/themes/polysun/templates/general/html.tpl.php' -->
+
