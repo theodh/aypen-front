@@ -10,6 +10,7 @@ description: Uitleg over Plissé Black Outvan Polysun
 keywords: Polysun Plissé Black Out
 
 ---
+
 ![](/img/content/polysun-plissee.jpg)
 
 Wil je een kamer volledig kunnen verduisteren?
