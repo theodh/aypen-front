@@ -6,7 +6,7 @@ menu-left: ''
 mainImageUrl: "/img/content/polysun/polysun-plisse-black-out.png"
 mainImageHeight: ''
 mainImageWidth: 100%
-description: Uitleg over Plissé Black Outvan Polysun
+description: Uitleg over Plissé Black Out van Polysun
 keywords: " Plissé Black Out"
 
 ---
