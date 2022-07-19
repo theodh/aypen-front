@@ -7,7 +7,7 @@ mainImageUrl: ''
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé Black Outvan Polysun
-keywords: Polysun Plissé Black Out
+keywords: " Plissé Black Out"
 
 ---
 
