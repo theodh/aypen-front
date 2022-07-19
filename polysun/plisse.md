@@ -4,7 +4,7 @@ titlelogo: ''
 layout: page-menu-left
 menu-left: ''
 mainImageUrl: ''
-mainImageHeight: "/img/content/polysun-plissee.jpg"
+mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé van Polysun
 keywords: Polysun Plissé
