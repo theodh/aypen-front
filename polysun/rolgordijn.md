@@ -7,7 +7,8 @@ mainImageUrl: "/img/content/polysun/polysun-rolgordijn.png"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over rolgordijnen van Polysun
-keywords: Polysun Plissé
+keywords: Polysun Rolgordijn
+
 ---
 Het Polysun ScreenLine rolgordijn is enig in zijn soort. 
 Er bestaat geen enkel ander merk met een vergelijkbaar systeem.
