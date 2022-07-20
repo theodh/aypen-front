@@ -2,7 +2,7 @@
 title: Jaloezieën
 titlelogo: " /img/content/polysun/polysun-jaloezie-smal.png"
 layout: page-menu-left
-menu-left: ''
+menu-left: menu-polysun.html
 mainImageUrl: "/img/content/polysun/polysun-jaloezie-smal.png"
 mainImageHeight: ''
 mainImageWidth: 100%
