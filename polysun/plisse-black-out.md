@@ -1,9 +1,9 @@
 ---
 title: Plissé Black Out
-titlelogo: "/img/content/polysun/polysun-plisse-black-out.png"
+titlelogo: ''
 layout: page-menu-left
 menu-left: menu-polysun.html
-mainImageUrl: ''
+mainImageUrl: "/img/content/verano-veranda-voor-website.jpeg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Plissé Black Out van Polysun
