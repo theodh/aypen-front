@@ -12,4 +12,4 @@ keywords: Polysun smalle Jaloezieën
 ---
 ![](/img/content/polysun-jaloezie.png)
 
-Ga je renoveren? Deze Polysun ScreenLine zonwering past perfect in bestaande ramen.     En omdat je de smalle lamellen, afhankelijk van de bediening, eenvoudig kunt optrekken, neerlaten en kantelen is ook hier een optimale warmte- en lichtregulering perfect mogelijk.
+Ga je renoveren? Deze Polysun ScreenLine zonwering past perfect in bestaande ramen. En omdat je de smalle lamellen, afhankelijk van de bediening, eenvoudig kunt optrekken, neerlaten en kantelen is ook hier een optimale warmte- en lichtregulering perfect mogelijk.
