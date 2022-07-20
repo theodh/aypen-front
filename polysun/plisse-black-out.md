@@ -2,7 +2,7 @@
 title: Plissé Black Out
 titlelogo: "/img/content/polysun/polysun-plisse-black-out.png"
 layout: page-menu-left
-menu-left: "/img/content/polysun/polysun-plisse-black-out.png"
+menu-left: menu-polysun.html
 mainImageUrl: "/img/content/polysun/polysun-plisse-black-out.png"
 mainImageHeight: ''
 mainImageWidth: 100%
