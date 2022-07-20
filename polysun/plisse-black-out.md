@@ -10,6 +10,7 @@ description: Uitleg over Plissé Black Out van Polysun
 keywords: " Plissé Black Out"
 
 ---
+![](/img/content/verano-veranda-voor-website.jpeg)
 
 Wil je een kamer volledig kunnen verduisteren?
 
