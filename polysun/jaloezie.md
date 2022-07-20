@@ -1,6 +1,6 @@
 ---
 title: Jaloezieën
-titlelogo: https://www.polysun.be/nl/jaloezieen-smal
+titlelogo: "/img/content/polysun/symbool-rolgordijn.png"
 layout: page-menu-left
 menu-left: menu-polysun.html
 mainImageUrl: "/img/content/polysun/polysun-jaloezie.png"
