@@ -2,7 +2,7 @@
 title: Sanitair
 layout: page-menu-left
 menu-left: menu-aanbod.html
-mainImageUrl: "/img/content/badkamer-website.png"
+mainImageUrl: "/img/content/photo-2020-10-06-14-42-37-1.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Sanitair
