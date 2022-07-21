@@ -3,7 +3,7 @@ title: Jaloezieën
 titlelogo: "/img/content/polysun/symbool-rolgordijn.png"
 layout: page-menu-left
 menu-left: menu-polysun.html
-mainImageUrl: " /img/content/polysun/polysun-jaloezie.png"
+mainImageUrl: "/img/content/polysun/polysun-jaloezie.png"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Jaloezieën van Polysun
