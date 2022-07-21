@@ -3,7 +3,7 @@ title: Jaloezieën
 titlelogo: ''
 layout: page-menu-left
 menu-left: menu-polysun.html
-mainImageUrl: ''
+mainImageUrl: "/img/content/polysun/polysun-jaloezie.png"
 mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over smalle Jaloezieën van Polysun
