@@ -1,0 +1,31 @@
+img[alt$=">"] {
+  float: right;
+}
+
+img[alt$="<"] {
+  float: left;
+}
+
+img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
+
+img[alt$="imgalignRight"] {
+  float: right;
+}
+
+img[alt$="imgAlignLeft"] {
+  float: left;
+}
+
+img[alt$="imgalignCenter<"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
