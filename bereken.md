@@ -9,6 +9,7 @@ mainImageUrl: ''
 mainImageHeight: ''
 mainImageWidth: 100%
 ---
+
 <div class="dontprint">
 <h3>Bereken</h3>
 

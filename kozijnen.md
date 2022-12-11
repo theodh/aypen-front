@@ -10,8 +10,8 @@ mainImageUrl: "/img/content/kozijnen.png"
 mainImageHeight: ''
 mainImageWidth: 100%
 pinterest_url: https://nl.pinterest.com/aypenbv/kozijnen/
-
 ---
+
 Met kozijnen van Aypen krijgt u geniale oplossingen op techniek, wooncomfort en de kleur die bij u past. Het systeem is op elk detail doordacht en voldoet aan de Nederlandse normen.
 
 Aangezien Nederland stap voor stap van het aardgas af moet, gaan we onze huizen op een andere manier verwarmen. Je kunt platen met warmte pasta's op je muur of vloer monteren of een warmtepomp plaatsen, maar dit alles heeft pas effect als het huis goed geïsoleerd is. En goed warm houden van je woning begint met goed geïsoleerde kozijnen.

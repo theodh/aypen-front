@@ -8,8 +8,8 @@ mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over rolgordijnen van Polysun
 keywords: Polysun Rolgordijn
-
 ---
+
 Het Polysun ScreenLine rolgordijn is enig in zijn soort. 
 Er bestaat geen enkel ander merk met een vergelijkbaar systeem.
  Door het gebruik van Verosol doek in plaats van folie combineert het alle voordelen van een gewoon rolgordijn met die van een rolgordijn tussen het glas.

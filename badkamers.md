@@ -9,6 +9,6 @@ description: Uitleg over Badkamers
 keywords: badkamer
 author: Judy Heeres
 pinterest_url: https://nl.pinterest.com/aypenbv/badkamers/
-
 ---
+
 Informatie over badkamers
