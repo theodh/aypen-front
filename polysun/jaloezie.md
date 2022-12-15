@@ -8,8 +8,8 @@ mainImageHeight: ''
 mainImageWidth: 100%
 description: Uitleg over Jaloezieën van Polysun
 keywords: Polysun Jaloezieën
-
 ---
+
 ![](/img/content/polysun4_lamellen-in-schuifpui_zeeland_lr-dsc_2120ent_id22826-1024x768.jpg)
 
 Hou je van een strakke en tijdloze zonwering? Kies dan voor Polysun ScreenLine jaloezieën.

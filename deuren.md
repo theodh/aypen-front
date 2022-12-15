@@ -8,8 +8,8 @@ mainImageUrl: "/img/deur.jpg"
 mainImageHeight: ''
 mainImageWidth: 100%
 pinterest_url: https://nl.pinterest.com/aypenbv/deuren/
-
 ---
+
 Aan voor- en achterdeuren worden hoge eisen gesteld. Enerzijds is een stevige en solide uitvoering noodzakelijk in verband met veelvuldig gebruik. Anderzijds hecht men veel waarde aan vorm, uitstraling en design.
 
 Een deur bepaalt tenslotte voor een belangrijk deel de uitstraling van uw woning. Wij leveren diverse modellen, die te combineren zijn met diverse soorten glas, grepen, etcetera.
